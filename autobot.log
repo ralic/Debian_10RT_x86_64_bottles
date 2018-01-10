@@ -1,19 +1,14 @@
-==> Installing dependencies for autoconf: m4
-==> Installing autoconf dependency: m4
-==> Downloading https://linuxbrew.bintray.com/bottles/m4-1.4.18.x86_64_linux.bottle.tar.gz
-==> Pouring m4-1.4.18.x86_64_linux.bottle.tar.gz
-🍺  /home/monday/.linuxbrew/Cellar/m4/1.4.18: 13 files, 1.1MB
-==> Installing autoconf
-==> Downloading https://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/autoconf/2.69 --with-lispdir=/home/monday/.linuxbrew/Cellar/autoconf/2.69/share/emacs/site-lisp/autoconf
-==> make install
+==> Downloading https://github.com/dylanaraps/neofetch/archive/3.3.0.tar.gz
+==> Downloading from https://codeload.github.com/dylanaraps/neofetch/tar.gz/3.3.0
+==> make install PREFIX=/home/monday/.linuxbrew/Cellar/neofetch/3.3.0 SYSCONFDIR=/home/monday/.linuxbrew/etc
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall autoconf`
-🍺  /home/monday/.linuxbrew/Cellar/autoconf/2.69: 67 files, 3MB, built in 9 seconds
-==> Determining autoconf bottle rebuild...
-==> Bottling autoconf-2.69.x86_64_linux.bottle.tar.gz...
-./autoconf-2.69.x86_64_linux.bottle.tar.gz
+You can run it manually using `brew postinstall neofetch`
+🍺  /home/monday/.linuxbrew/Cellar/neofetch/3.3.0: 142 files, 310.9KB, built in 3 seconds
+==> Determining neofetch bottle rebuild...
+==> Bottling neofetch-3.3.0.x86_64_linux.bottle.1.tar.gz...
+./neofetch-3.3.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    sha256 "786f13afeb6b4923359f6c1adb150ed8a696d499396efccd2f9290016cfc146a" => :x86_64_linux
+    rebuild 1
+    sha256 "3af7e9179d178f060329e3d4c36cd9083767917d635afddbf08ab57369f52bf3" => :x86_64_linux
   end
