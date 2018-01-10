@@ -1,14 +1,37 @@
-==> Downloading https://github.com/dylanaraps/neofetch/archive/3.3.0.tar.gz
-==> Downloading from https://codeload.github.com/dylanaraps/neofetch/tar.gz/3.3.0
-==> make install PREFIX=/home/monday/.linuxbrew/Cellar/neofetch/3.3.0 SYSCONFDIR=/home/monday/.linuxbrew/etc
+==> Downloading https://www.cpan.org/src/5.0/perl-5.26.1.tar.xz
+Already downloaded: /home/monday/.cache/Homebrew/perl-5.26.1.tar.xz
+==> ./Configure -des -Dprefix=/home/monday/.linuxbrew/Cellar/perl/5.26.1 -Dprivlib=/home/monday/.linuxbrew/Cellar/perl/5.26.1/lib/perl5/5.26.1 -Dsitelib=/home/monday/.linuxbrew/Cellar/perl/5.26.1/lib/perl5/site_perl/5.26.1 -Dotherlibdirs=/home/monday/.linuxbrew/lib/perl5/site_perl/5.26.1 -Dperlpath=/home/monday/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/monday/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1/share/man/man1 -Dman3dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/monday/.linuxbrew/include
+==> make
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall neofetch`
-🍺  /home/monday/.linuxbrew/Cellar/neofetch/3.3.0: 142 files, 310.9KB, built in 3 seconds
-==> Determining neofetch bottle rebuild...
-==> Bottling neofetch-3.3.0.x86_64_linux.bottle.1.tar.gz...
-./neofetch-3.3.0.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall perl`
+==> Caveats
+By default non-brewed cpan modules are installed to the Cellar. If you wish
+for your modules to persist across updates we recommend using `local::lib`.
+
+You can set that up like this:
+  PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
+  echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"' >> ~/.bash_profile
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/perl/5.26.1: 2,402 files, 65.2MB, built in 4 minutes 4 seconds
+==> Auto-updated Homebrew!
+Updated Homebrew from 77a15dc0f to c85a991d1.
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+artifactory
+fn
+fonttools
+jump
+pari
+rustup-init
+sjk
+
+==> Determining perl bottle rebuild...
+==> Bottling perl-5.26.1.x86_64_linux.bottle.tar.gz...
+==> Detecting if perl-5.26.1.x86_64_linux.bottle.tar.gz is relocatable...
+./perl-5.26.1.x86_64_linux.bottle.tar.gz
   bottle do
-    cellar :any_skip_relocation
-    rebuild 1
-    sha256 "3af7e9179d178f060329e3d4c36cd9083767917d635afddbf08ab57369f52bf3" => :x86_64_linux
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
+    sha256 "8dc303ad404d27c8754432c95596885ca6c261efa0388a061dc36323786b207b" => :x86_64_linux
   end
