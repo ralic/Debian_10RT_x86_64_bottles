@@ -1,8 +1,17 @@
-==> Determining unzip bottle rebuild...
-==> Bottling unzip-6.0_3.x86_64_linux.bottle.1.tar.gz...
-./unzip-6.0_3.x86_64_linux.bottle.1.tar.gz
+==> Downloading https://ssl.icu-project.org/files/icu4c/60.2/icu4c-60_2-src.tgz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/icu4c/60.2 --disable-samples --disable-tests --enable-static --with-library-bits=64
+==> make
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall icu4c`
+🍺  /home/monday/.linuxbrew/Cellar/icu4c/60.2: 249 files, 71.2MB, built in 5 minutes 8 seconds
+==> Determining icu4c bottle rebuild...
+==> Bottling icu4c-60.2.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if icu4c-60.2.x86_64_linux.bottle.1.tar.gz is relocatable...
+./icu4c-60.2.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "69eed195fd5c055af416615492e3f7cfce317b5e6303e3f8f709fc318c3de9eb" => :x86_64_linux
+    sha256 "ca7620c1739d3f6a456708ff9389ec3f50eb02214f1146f145ae696891ce5c8f" => :x86_64_linux
   end
