@@ -1,8 +1,22 @@
-==> Determining automake bottle rebuild...
-==> Bottling automake-1.15.1.x86_64_linux.bottle.1.tar.gz...
-./automake-1.15.1.x86_64_linux.bottle.1.tar.gz
+==> Installing dependencies for sqlite: unzip
+==> Installing sqlite dependency: unzip
+==> Downloading https://linuxbrew.bintray.com/bottles/unzip-6.0_3.x86_64_linux.bottle.tar.gz
+==> Pouring unzip-6.0_3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/unzip/6.0_3: 15 files, 434.5KB
+==> Installing sqlite
+==> Downloading https://sqlite.org/2017/sqlite-autoconf-3210000.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/sqlite/3.21.0 --enable-dynamic-extensions --enable-readline --disable-editline
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall sqlite`
+🍺  /home/monday/.linuxbrew/Cellar/sqlite/3.21.0: 12 files, 19.0MB, built in 1 minute 41 seconds
+==> Determining sqlite bottle rebuild...
+==> Bottling sqlite-3.21.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if sqlite-3.21.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./sqlite-3.21.0.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "fbdda521bacd945ce58906fc6cdb50b0d5674bc7c6234f3a209f2f3ca83fc222" => :x86_64_linux
+    sha256 "fe0aaeeb55aac14ce17ce54c163b86ea309f903cd0f70c0e70fcf47cecb0033e" => :x86_64_linux
   end
