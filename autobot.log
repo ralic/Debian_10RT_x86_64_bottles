@@ -1,34 +1,8 @@
-==> Downloading https://www.openssl.org/source/openssl-1.0.2n.tar.gz
-==> Downloading https://github.com/openssl/openssl/pull/1524.patch
-==> Downloading from https://patch-diff.githubusercontent.com/raw/openssl/openssl/pull/1524.patch
-==> Patching
-==> Applying 1524.patch
-patching file Configure
-Hunk #1 succeeded at 1723 (offset 2 lines).
-==> perl ./Configure --prefix=/home/monday/.linuxbrew/Cellar/openssl/1.0.2n --openssldir=/home/monday/.linuxbrew/etc/openssl no-ssl2 zlib-dynamic shared enable-cms -Wa,--noexecstack linux-x86_64
-==> make depend
-==> make
-==> make test
-==> make install MANDIR=/home/monday/.linuxbrew/Cellar/openssl/1.0.2n/share/man MANSUFFIX=ssl
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall openssl`
-==> Caveats
-A CA file has been bootstrapped using certificates from the SystemRoots
-keychain. To add additional certificates (e.g. the certificates added in
-the System keychain), place .pem files in
-  /home/monday/.linuxbrew/etc/openssl/certs
-
-and run
-  /home/monday/.linuxbrew/opt/openssl/bin/c_rehash
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/openssl/1.0.2n: 1,799 files, 14.6MB, built in 5 minutes 24 seconds
-==> Determining openssl bottle rebuild...
-==> Bottling openssl-1.0.2n.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if openssl-1.0.2n.x86_64_linux.bottle.1.tar.gz is relocatable...
-./openssl-1.0.2n.x86_64_linux.bottle.1.tar.gz
+==> Determining unzip bottle rebuild...
+==> Bottling unzip-6.0_3.x86_64_linux.bottle.1.tar.gz...
+./unzip-6.0_3.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "6cddcee73f995425c645d1aa3798e30a3e6394a4b833a63ec3d975ad79825a6c" => :x86_64_linux
+    sha256 "69eed195fd5c055af416615492e3f7cfce317b5e6303e3f8f709fc318c3de9eb" => :x86_64_linux
   end
