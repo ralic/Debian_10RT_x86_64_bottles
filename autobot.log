@@ -1,22 +1,26 @@
-==> Downloading https://nodejs.org/dist/v9.3.0/node-v9.3.0.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/node/9.3.0_1 --without-npm --with-intl=system-icu
+==> Upgrading 1 outdated package, with result:
+node 9.4.0
+==> Upgrading node 
+==> Downloading https://nodejs.org/dist/v9.4.0/node-v9.4.0.tar.xz
+Already downloaded: /home/monday/.cache/Homebrew/node-9.4.0.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/node/9.4.0 --without-npm --with-intl=system-icu
 ==> make install
 ==> Downloading https://registry.npmjs.org/npm/-/npm-5.6.0.tgz
-==> node /tmp/node-20180111-9278-113arde/node-v9.3.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/monday/.linuxbrew/Cellar/node/9.3.0_1/libexec /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
+==> node /tmp/node-20180115-31298-rtsuiw/node-v9.4.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/monday/.linuxbrew/Cellar/node/9.4.0/libexec /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
 ==> Not running post_install as we're building a bottle
 You can run it manually using `brew postinstall node`
 ==> Caveats
 Bash completion has been installed to:
   /home/monday/.linuxbrew/etc/bash_completion.d
 ==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/node/9.3.0_1: 5,139 files, 55.7MB, built in 24 minutes 45 seconds
+🍺  /home/monday/.linuxbrew/Cellar/node/9.4.0: 5,140 files, 55.8MB, built in 26 minutes 22 seconds
 ==> Determining node bottle rebuild...
-==> Bottling node-9.3.0_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if node-9.3.0_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./node-9.3.0_1.x86_64_linux.bottle.1.tar.gz
+==> Bottling node-9.4.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if node-9.4.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./node-9.4.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "2a67c9aa8a592d298b52c6398192bb714eb6710f6c4e4f75a097a5a3b39db642" => :x86_64_linux
+    sha256 "e01788725ef59dce058ba856fd9ef9dde35a82e38f39f597b49b1c865f00a510" => :x86_64_linux
   end
