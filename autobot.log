@@ -1,9 +1,17 @@
-==> Determining mpfr bottle rebuild...
-==> Bottling mpfr-4.0.0.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if mpfr-4.0.0.x86_64_linux.bottle.1.tar.gz is relocatable...
-./mpfr-4.0.0.x86_64_linux.bottle.1.tar.gz
+==> Downloading https://ftp.gnu.org/gnu/mpc/mpc-1.1.0.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libmpc/1.1.0 --with-gmp=/home/monday/.linuxbrew/opt/gmp --with-mpfr=/home/monday/.linuxbrew/opt/mpfr
+==> make
+==> make check
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall libmpc`
+🍺  /home/monday/.linuxbrew/Cellar/libmpc/1.1.0: 13 files, 1.5MB, built in 58 seconds
+==> Determining libmpc bottle rebuild...
+==> Bottling libmpc-1.1.0.x86_64_linux.bottle.1.tar.gz...
+./libmpc-1.1.0.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "9a33bdc4546c6649f289c2b9798a5e9f1d436aff16abee9631c7ee2d6a4a2e85" => :x86_64_linux
+    sha256 "5b930b200688bd5390edbef91cc2fdb6117526f45932efe020028f35ca1e35c1" => :x86_64_linux
   end
