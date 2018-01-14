@@ -1,26 +1,26 @@
 ==> Upgrading 1 outdated package, with result:
-node 9.4.0
-==> Upgrading node 
-==> Downloading https://nodejs.org/dist/v9.4.0/node-v9.4.0.tar.xz
-Already downloaded: /home/monday/.cache/Homebrew/node-9.4.0.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/node/9.4.0 --without-npm --with-intl=system-icu
+libtiff 4.0.9_2
+==> Upgrading libtiff 
+==> Downloading http://download.osgeo.org/libtiff/tiff-4.0.9.tar.gz
+==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/t/tiff/tiff_4.0.9-3.debian.tar.xz
+==> Patching
+==> Applying patches/CVE-2017-9935.patch
+patching file libtiff/tif_dir.c
+patching file tools/tiff2pdf.c
+==> Applying patches/CVE-2017-18013.patch
+patching file libtiff/tif_print.c
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libtiff/4.0.9_2 --without-x --with-jpeg-include-dir=/home/monday/.linuxbrew/opt/jpeg/include --with-jpeg-lib-dir=/home/monday/.linuxbrew/opt/jpeg/lib --disable-lzma
 ==> make install
-==> Downloading https://registry.npmjs.org/npm/-/npm-5.6.0.tgz
-==> node /tmp/node-20180115-31298-rtsuiw/node-v9.4.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/monday/.linuxbrew/Cellar/node/9.4.0/libexec /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall node`
-==> Caveats
-Bash completion has been installed to:
-  /home/monday/.linuxbrew/etc/bash_completion.d
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/node/9.4.0: 5,140 files, 55.8MB, built in 26 minutes 22 seconds
-==> Determining node bottle rebuild...
-==> Bottling node-9.4.0.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if node-9.4.0.x86_64_linux.bottle.1.tar.gz is relocatable...
-./node-9.4.0.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall libtiff`
+🍺  /home/monday/.linuxbrew/Cellar/libtiff/4.0.9_2: 248 files, 8MB, built in 1 minute 4 seconds
+==> Determining libtiff bottle rebuild...
+==> Bottling libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz is relocatable...
+./libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "e01788725ef59dce058ba856fd9ef9dde35a82e38f39f597b49b1c865f00a510" => :x86_64_linux
+    sha256 "797c7abd9a5ec1b8435632a71ceea673adc78167cc96abc97d3fe830f3df7333" => :x86_64_linux
   end
