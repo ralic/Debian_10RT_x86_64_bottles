@@ -1,26 +1,9 @@
-==> Upgrading 1 outdated package, with result:
-libtiff 4.0.9_2
-==> Upgrading libtiff 
-==> Downloading http://download.osgeo.org/libtiff/tiff-4.0.9.tar.gz
-==> Downloading https://mirrors.ocf.berkeley.edu/debian/pool/main/t/tiff/tiff_4.0.9-3.debian.tar.xz
-==> Patching
-==> Applying patches/CVE-2017-9935.patch
-patching file libtiff/tif_dir.c
-patching file tools/tiff2pdf.c
-==> Applying patches/CVE-2017-18013.patch
-patching file libtiff/tif_print.c
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libtiff/4.0.9_2 --without-x --with-jpeg-include-dir=/home/monday/.linuxbrew/opt/jpeg/include --with-jpeg-lib-dir=/home/monday/.linuxbrew/opt/jpeg/lib --disable-lzma
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libtiff`
-🍺  /home/monday/.linuxbrew/Cellar/libtiff/4.0.9_2: 248 files, 8MB, built in 1 minute 4 seconds
-==> Determining libtiff bottle rebuild...
-==> Bottling libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz is relocatable...
-./libtiff-4.0.9_2.x86_64_linux.bottle.1.tar.gz
+==> Determining gmp bottle rebuild...
+==> Bottling gmp-6.1.2_1.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if gmp-6.1.2_1.x86_64_linux.bottle.1.tar.gz is relocatable...
+./gmp-6.1.2_1.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "797c7abd9a5ec1b8435632a71ceea673adc78167cc96abc97d3fe830f3df7333" => :x86_64_linux
+    sha256 "10569a7ee1b58a5c597bb5b6d4d5dcd6fa48a912e34fd22786592cdbc713f8f5" => :x86_64_linux
   end
