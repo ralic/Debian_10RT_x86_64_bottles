@@ -1,27 +1,28 @@
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-2.16.0.tar.xz
-==> make install prefix=/home/monday/.linuxbrew/Cellar/git/2.16.0 sysconfdir=/home/monday/.linuxbrew/etc CC=gcc-7 CFLAGS= LDFLAGS= NO_TCLTK=1 NO_APPLE_COMMON_CRYPTO=1 OPENSSLDIR=/home/monday/.linuxbrew/opt/openssl
-==> make
-==> make test
-==> make CC=gcc-7 CFLAGS= LDFLAGS=
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-manpages-2.16.0.tar.xz
-==> Downloading https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.16.0.tar.xz
+==> Downloading https://storage.googleapis.com/golang/go1.9.2.src.tar.gz
+==> Downloading https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
+==> ./make.bash --no-clean
+==> /home/monday/.linuxbrew/Cellar/go/1.9.2/bin/go install -race std
+==> Cloning https://go.googlesource.com/tools.git
+==> Checking out branch release-branch.go1.9
+==> go build
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall git`
+You can run it manually using `brew postinstall go`
 ==> Caveats
-Bash completion has been installed to:
-  /home/monday/.linuxbrew/etc/bash_completion.d
+A valid GOPATH is required to use the `go get` command.
+If $GOPATH is not specified, $HOME/go will be used by default:
+  https://golang.org/doc/code.html#GOPATH
 
-Emacs Lisp files have been installed to:
-  /home/monday/.linuxbrew/share/emacs/site-lisp/git
+You may wish to add the GOROOT-based install location to your PATH:
+  export PATH=$PATH:/home/monday/.linuxbrew/opt/go/libexec/bin
 ==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/git/2.16.0: 1,415 files, 44.1MB, built in 1 minute 14 seconds
-==> Determining git bottle rebuild...
-==> Bottling git-2.16.0.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if git-2.16.0.x86_64_linux.bottle.1.tar.gz is relocatable...
-./git-2.16.0.x86_64_linux.bottle.1.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/go/1.9.2: 7,646 files, 299.3MB, built in 2 minutes 20 seconds
+==> Determining go bottle rebuild...
+==> Bottling go-1.9.2.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if go-1.9.2.x86_64_linux.bottle.1.tar.gz is relocatable...
+./go-1.9.2.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "ac26280eea64b2c997e736cde09da38e1f204a4229a44b58b6a64a8cd9dcc4ad" => :x86_64_linux
+    sha256 "766309e8e247b8f4fc2d1d21a612a0b20b2371995a6a5ea860ba7d35768908c2" => :x86_64_linux
   end
