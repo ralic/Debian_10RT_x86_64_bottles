@@ -1,16 +1,17 @@
-==> Downloading http://isl.gforge.inria.fr/isl-0.18.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/isl/0.18 --with-gmp=system --with-gmp-prefix=/home/monday/.linuxbrew/opt/gmp
-==> make check
+==> Downloading https://curl.haxx.se/download/curl-7.57.0.tar.bz2
+Already downloaded: /home/monday/.cache/Homebrew/curl-7.57.0.tar.bz2
+==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/curl/7.57.0 --with-ssl=/home/monday/.linuxbrew/opt/openssl --with-ca-bundle=/home/monday/.linuxbrew/etc/openssl/cert.pem --with-ca-path=/home/monday/.linuxbrew/etc/openssl/certs --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares --disable-ldap
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall isl`
-🍺  /home/monday/.linuxbrew/Cellar/isl/0.18: 81 files, 6.4MB, built in 1 minute 54 seconds
-==> Determining isl bottle rebuild...
-==> Bottling isl-0.18.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if isl-0.18.x86_64_linux.bottle.1.tar.gz is relocatable...
-./isl-0.18.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall curl`
+🍺  /home/monday/.linuxbrew/Cellar/curl/7.57.0: 415 files, 3.5MB, built in 1 minute 47 seconds
+==> Determining curl bottle rebuild...
+==> Bottling curl-7.57.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if curl-7.57.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./curl-7.57.0.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "4c2231b0ed791558d931b4baaa920402bceadc93e3a44232224519781c17c3e2" => :x86_64_linux
+    sha256 "221cf1b5a515258c7449cd2a74711505d39873cd5bfd093b94e47c13375d9ac4" => :x86_64_linux
   end
