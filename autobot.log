@@ -1,28 +1,14 @@
-==> Downloading https://storage.googleapis.com/golang/go1.9.2.src.tar.gz
-==> Downloading https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
-==> ./make.bash --no-clean
-==> /home/monday/.linuxbrew/Cellar/go/1.9.2/bin/go install -race std
-==> Cloning https://go.googlesource.com/tools.git
-==> Checking out branch release-branch.go1.9
-==> go build
+==> Downloading https://downloads.sourceforge.net/project/scons/scons/3.0.1/scons-3.0.1.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/scons/scons/3.0.1/scons-3.0.1.tar.gz
+==> python setup.py install --prefix=/home/monday/.linuxbrew/Cellar/scons/3.0.1_1 --standalone-lib --install-lib=/home/monday/.linuxbrew/Cellar/scons/3.0.1_1/libexec/scons-local --install-scripts=/home/monday/.linuxbrew/Cellar/scons/3.0.1_1/bin --install-data=/home/monday/.linuxbrew/Cellar/scons/3.0.1_1/libexec --no-version-script --no-install-man
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall go`
-==> Caveats
-A valid GOPATH is required to use the `go get` command.
-If $GOPATH is not specified, $HOME/go will be used by default:
-  https://golang.org/doc/code.html#GOPATH
-
-You may wish to add the GOROOT-based install location to your PATH:
-  export PATH=$PATH:/home/monday/.linuxbrew/opt/go/libexec/bin
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/go/1.9.2: 7,646 files, 299.3MB, built in 2 minutes 20 seconds
-==> Determining go bottle rebuild...
-==> Bottling go-1.9.2.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if go-1.9.2.x86_64_linux.bottle.1.tar.gz is relocatable...
-./go-1.9.2.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall scons`
+🍺  /home/monday/.linuxbrew/Cellar/scons/3.0.1_1: 405 files, 3.8MB, built in 5 seconds
+==> Determining scons bottle rebuild...
+==> Bottling scons-3.0.1_1.x86_64_linux.bottle.1.tar.gz...
+./scons-3.0.1_1.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "766309e8e247b8f4fc2d1d21a612a0b20b2371995a6a5ea860ba7d35768908c2" => :x86_64_linux
+    sha256 "aab1fccdf7c6e6ffb28677f596a33017fe73aa9cf5975852ae76b7f436683f9b" => :x86_64_linux
   end
