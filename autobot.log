@@ -1,14 +1,21 @@
-==> Downloading https://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libffi/3.2.1
+==> Auto-updated Homebrew!
+Updated Homebrew from 851177a29 to e51af2acc.
+No changes to formulae.
+
+==> Downloading https://download.savannah.gnu.org/releases/lzip/lzip-1.19.tar.gz
+==> Downloading from https://mirrors.up.pt/pub/nongnu/lzip/lzip-1.19.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/lzip/1.19 CXX=g++-7 CXXFLAGS=
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libffi`
-🍺  /home/monday/.linuxbrew/Cellar/libffi/3.2.1: 17 files, 379.5KB, built in 23 seconds
-==> Determining libffi bottle rebuild...
-==> Bottling libffi-3.2.1.x86_64_linux.bottle.1.tar.gz...
-./libffi-3.2.1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall lzip`
+🍺  /home/monday/.linuxbrew/Cellar/lzip/1.19: 10 files, 294.6KB, built in 18 seconds
+==> Determining lzip bottle rebuild...
+==> Bottling lzip-1.19.x86_64_linux.bottle.1.tar.gz...
+./lzip-1.19.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "d1d762cbd4ed7c9cba9915871d79bdcf7809cb892b0fa31904f55890c776afb3" => :x86_64_linux
+    sha256 "114fcc4b078035b8eb5e7d695e7ba246a4216a9ee551e1404b974f6fc998f1a9" => :x86_64_linux
   end
