@@ -1,32 +1,14 @@
-==> Downloading https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python3/3.6.4_2 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python3/3.6.4_2/share --datadir=/home/monday/.linuxbrew/Cellar/python3/3.6.4_2/share --enable-shared --without-ensurepip --enable-loadable-sqlite-extensions --with-system-ffi MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
-==> make
-==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python3/3.6.4_2
-==> Downloading https://files.pythonhosted.org/packages/a4/c8/9a7a47f683d54d83f648d37c3e180317f80dc126a304c45dc6663246233a/setuptools-36.5.0.zip
-==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
-==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> Downloading https://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libffi/3.2.1
+==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall python3`
-==> Caveats
-Pip, setuptools, and wheel have been installed. To update them
-  pip3 install --upgrade pip setuptools wheel
-
-You can install Python packages with
-  pip3 install <package>
-
-They will install into the site-package directory
-  /home/monday/.linuxbrew/lib/python3.6/site-packages
-
-See: https://docs.brew.sh/Homebrew-and-Python.html
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/python3/3.6.4_2: 7,220 files, 144.4MB, built in 3 minutes 10 seconds
-==> Determining python3 bottle rebuild...
-==> Bottling python3-3.6.4_2.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if python3-3.6.4_2.x86_64_linux.bottle.1.tar.gz is relocatable...
-./python3-3.6.4_2.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall libffi`
+🍺  /home/monday/.linuxbrew/Cellar/libffi/3.2.1: 17 files, 379.5KB, built in 23 seconds
+==> Determining libffi bottle rebuild...
+==> Bottling libffi-3.2.1.x86_64_linux.bottle.1.tar.gz...
+./libffi-3.2.1.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "f6755e12e741cb81e6b86635b43210fc760e62ff96e7f76aebb25dcb49fa0294" => :x86_64_linux
+    sha256 "d1d762cbd4ed7c9cba9915871d79bdcf7809cb892b0fa31904f55890c776afb3" => :x86_64_linux
   end
