@@ -1,23 +1,21 @@
 ==> Upgrading 1 outdated package, with result:
-gettext 0.19.8.1_1
-==> Upgrading gettext 
-==> Downloading https://ftp.gnu.org/gnu/gettext/gettext-0.19.8.1.tar.xz
-==> Downloading http://xmlsoft.org/sources/libxml2-2.9.7.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/gettext/0.19.8.1_1/libexec --without-python --without-lzma
-==> make install
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/gettext/0.19.8.1_1  --with-included-glib --with-included-libcroco --with-included-libunistring --with-emacs --with-lispdir=/home/monday/.linuxbrew/Cellar/gettext/0.19.8.1_1/share/emacs/site-lisp/gettext --disable-java --disable-csharp --without-git --without-cvs --without-xz
+mpfr 4.0.1
+==> Upgrading mpfr 
+==> Downloading https://ftp.gnu.org/gnu/mpfr/mpfr-4.0.1.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/mpfr/4.0.1 --disable-silent-rules
 ==> make
+==> make check
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall gettext`
-🍺  /home/monday/.linuxbrew/Cellar/gettext/0.19.8.1_1: 2,198 files, 46.3MB, built in 8 minutes 18 seconds
-==> Determining gettext bottle rebuild...
-==> Bottling gettext-0.19.8.1_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if gettext-0.19.8.1_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./gettext-0.19.8.1_1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall mpfr`
+🍺  /home/monday/.linuxbrew/Cellar/mpfr/4.0.1: 29 files, 10.7MB, built in 3 minutes 1 second
+==> Determining mpfr bottle rebuild...
+==> Bottling mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz is relocatable...
+./mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "ed9fa096073f9fd02c7aca266adeb92bf25c41ebebbbae47f219afc7493b365e" => :x86_64_linux
+    sha256 "89ee373eabfa5d120b28ee2e7af7c72355d6b492c7c2081d796af326b0bf3150" => :x86_64_linux
   end
