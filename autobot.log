@@ -1,19 +1,19 @@
 ==> Upgrading 1 outdated package, with result:
-sqlite 3.22.0
-==> Upgrading sqlite 
-==> Downloading https://sqlite.org/2018/sqlite-autoconf-3220000.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/sqlite/3.22.0 --enable-dynamic-extensions --enable-readline --disable-editline
+curl 7.58.0
+==> Upgrading curl 
+==> Downloading https://curl.haxx.se/download/curl-7.58.0.tar.bz2
+==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/curl/7.58.0 --with-ssl=/home/monday/.linuxbrew/opt/openssl --with-ca-bundle=/home/monday/.linuxbrew/etc/openssl/cert.pem --with-ca-path=/home/monday/.linuxbrew/etc/openssl/certs --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares --disable-ldap
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall sqlite`
-🍺  /home/monday/.linuxbrew/Cellar/sqlite/3.22.0: 12 files, 19.2MB, built in 3 minutes 36 seconds
-==> Determining sqlite bottle rebuild...
-==> Bottling sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz is relocatable...
-./sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall curl`
+🍺  /home/monday/.linuxbrew/Cellar/curl/7.58.0: 416 files, 3.5MB, built in 2 minutes 7 seconds
+==> Determining curl bottle rebuild...
+==> Bottling curl-7.58.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if curl-7.58.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./curl-7.58.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "8c0da82a5e23ee2dc689370c2c76996b8ae2a1911f20cd3040bc4403e12d9a4c" => :x86_64_linux
+    sha256 "5b1d53cc8f1865d50464ca0f323a740d97835a76244a37cf2e9eb10d1bed4704" => :x86_64_linux
   end
