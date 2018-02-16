@@ -1,8 +1,464 @@
-==> Determining gpatch bottle rebuild...
-==> Bottling gpatch-2.7.6.x86_64_linux.bottle.1.tar.gz...
-./gpatch-2.7.6.x86_64_linux.bottle.1.tar.gz
+==> Upgrading 1 outdated package, with result:
+python3 3.6.4_3
+==> Upgrading python3 
+==> Installing dependencies for python3: linuxbrew/xorg/xtrans, linuxbrew/xorg/util-macros, linuxbrew/xorg/xextproto, linuxbrew/xorg/bigreqsproto, linuxbrew/xorg/compositeproto, linuxbrew/xorg/damageproto, linuxbrew/xorg/dmxproto, linuxbrew/xorg/dri2proto, linuxbrew/xorg/dri3proto, linuxbrew/xorg/fixesproto, linuxbrew/xorg/fontsproto, linuxbrew/xorg/glproto, linuxbrew/xorg/inputproto, linuxbrew/xorg/kbproto, linuxbrew/xorg/presentproto, linuxbrew/xorg/randrproto, linuxbrew/xorg/recordproto, linuxbrew/xorg/renderproto, linuxbrew/xorg/resourceproto, linuxbrew/xorg/scrnsaverproto, linuxbrew/xorg/videoproto, linuxbrew/xorg/xcmiscproto, linuxbrew/xorg/xf86bigfontproto, linuxbrew/xorg/xf86dgaproto, linuxbrew/xorg/xf86driproto, linuxbrew/xorg/xf86vidmodeproto, linuxbrew/xorg/xineramaproto, linuxbrew/xorg/xproto, linuxbrew/xorg/xorg-protocols, linuxbrew/xorg/libxau, linuxbrew/xorg/xcb-proto, linuxbrew/xorg/libpthread-stubs, linuxbrew/xorg/libxdmcp, gawk, check, python, linuxbrew/xorg/libxcb, linuxbrew/xorg/libx11, linuxbrew/xorg/libxext, linuxbrew/xorg/libfs, linuxbrew/xorg/libice, linuxbrew/xorg/libsm, linuxbrew/xorg/libxscrnsaver, linuxbrew/xorg/libxt, linuxbrew/xorg/libxmu, linuxbrew/xorg/libxpm, linuxbrew/xorg/libxaw, linuxbrew/xorg/libxaw3d, linuxbrew/xorg/libxfixes, linuxbrew/xorg/libxcomposite, linuxbrew/xorg/libxrender, linuxbrew/xorg/libxcursor, linuxbrew/xorg/libxdamage, linuxbrew/xorg/font-util, linuxbrew/xorg/libfontenc, linuxbrew/xorg/libxfont, gperf, fontconfig, linuxbrew/xorg/libxft, linuxbrew/xorg/libxi, linuxbrew/xorg/libxinerama, linuxbrew/xorg/libxrandr, linuxbrew/xorg/libxres, linuxbrew/xorg/libxtst, linuxbrew/xorg/libxv, linuxbrew/xorg/libxvmc, linuxbrew/xorg/libxxf86dga, linuxbrew/xorg/libxxf86vm, linuxbrew/xorg/libdmx, linuxbrew/xorg/libpciaccess, linuxbrew/xorg/libxkbfile, linuxbrew/xorg/libxshmfence, linuxbrew/xorg/xdpyinfo, linuxbrew/xorg/xorg, tcl-tk
+==> Installing python3 dependency: linuxbrew/xorg/xtrans
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xtrans-1.3.5.x86_64_linux.bottle.tar.gz
+==> Pouring xtrans-1.3.5.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xtrans/1.3.5: 14 files, 315.3KB
+==> Installing python3 dependency: linuxbrew/xorg/util-macros
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/util-macros-1.19.0.x86_64_linux.bottle.tar.gz
+==> Pouring util-macros-1.19.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/util-macros/1.19.0: 7 files, 180.2KB
+==> Installing python3 dependency: linuxbrew/xorg/xextproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xextproto-7.3.0.x86_64_linux.bottle.tar.gz
+==> Pouring xextproto-7.3.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xextproto/7.3.0: 38 files, 218.5KB
+==> Installing python3 dependency: linuxbrew/xorg/bigreqsproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/bigreqsproto-1.1.2.x86_64_linux.bottle.tar.gz
+==> Pouring bigreqsproto-1.1.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/bigreqsproto/1.1.2: 7 files, 45.4KB
+==> Installing python3 dependency: linuxbrew/xorg/compositeproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/compositeproto-0.4.2.x86_64_linux.bottle.tar.gz
+==> Pouring compositeproto-0.4.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/compositeproto/0.4.2: 9 files, 73.2KB
+==> Installing python3 dependency: linuxbrew/xorg/damageproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/damageproto-1.2.1.x86_64_linux.bottle.tar.gz
+==> Pouring damageproto-1.2.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/damageproto/1.2.1: 10 files, 60.0KB
+==> Installing python3 dependency: linuxbrew/xorg/dmxproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/dmxproto-2.3.1.x86_64_linux.bottle.tar.gz
+==> Pouring dmxproto-2.3.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/dmxproto/2.3.1: 7 files, 51.7KB
+==> Installing python3 dependency: linuxbrew/xorg/dri2proto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/dri2proto-2.8.x86_64_linux.bottle.tar.gz
+==> Pouring dri2proto-2.8.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/dri2proto/2.8: 8 files, 87.2KB
+==> Installing python3 dependency: linuxbrew/xorg/dri3proto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/dri3proto-1.0.x86_64_linux.bottle.tar.gz
+==> Pouring dri3proto-1.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/dri3proto/1.0: 5 files, 54.5KB
+==> Installing python3 dependency: linuxbrew/xorg/fixesproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/fixesproto-5.0.x86_64_linux.bottle.tar.gz
+==> Pouring fixesproto-5.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/fixesproto/5.0: 9 files, 88.8KB
+==> Installing python3 dependency: linuxbrew/xorg/fontsproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/fontsproto-2.1.3.x86_64_linux.bottle.tar.gz
+==> Pouring fontsproto-2.1.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/fontsproto/2.1.3: 11 files, 104.6KB
+==> Installing python3 dependency: linuxbrew/xorg/glproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/glproto-1.4.17.x86_64_linux.bottle.tar.gz
+==> Pouring glproto-1.4.17.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/glproto/1.4.17: 10 files, 152.6KB
+==> Installing python3 dependency: linuxbrew/xorg/inputproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/inputproto-2.3.2.x86_64_linux.bottle.tar.gz
+==> Pouring inputproto-2.3.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/inputproto/2.3.2: 10 files, 259.2KB
+==> Installing python3 dependency: linuxbrew/xorg/kbproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/kbproto-1.0.7.x86_64_linux.bottle.tar.gz
+==> Pouring kbproto-1.0.7.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/kbproto/1.0.7: 10 files, 169.2KB
+==> Installing python3 dependency: linuxbrew/xorg/presentproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/presentproto-1.0.x86_64_linux.bottle.tar.gz
+==> Pouring presentproto-1.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/presentproto/1.0: 6 files, 70KB
+==> Installing python3 dependency: linuxbrew/xorg/randrproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/randrproto-1.5.0.x86_64_linux.bottle.tar.gz
+==> Pouring randrproto-1.5.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/randrproto/1.5.0: 8 files, 218.7KB
+==> Installing python3 dependency: linuxbrew/xorg/recordproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/recordproto-1.14.2.x86_64_linux.bottle.tar.gz
+==> Pouring recordproto-1.14.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/recordproto/1.14.2: 8 files, 53KB
+==> Installing python3 dependency: linuxbrew/xorg/renderproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/renderproto-0.11.1.x86_64_linux.bottle.tar.gz
+==> Pouring renderproto-0.11.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/renderproto/0.11.1: 8 files, 110.8KB
+==> Installing python3 dependency: linuxbrew/xorg/resourceproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/resourceproto-1.2.0.x86_64_linux.bottle.tar.gz
+==> Pouring resourceproto-1.2.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/resourceproto/1.2.0: 7 files, 72.3KB
+==> Installing python3 dependency: linuxbrew/xorg/scrnsaverproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/scrnsaverproto-1.2.2.x86_64_linux.bottle.tar.gz
+==> Pouring scrnsaverproto-1.2.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/scrnsaverproto/1.2.2: 7 files, 50.7KB
+==> Installing python3 dependency: linuxbrew/xorg/videoproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/videoproto-2.3.3.x86_64_linux.bottle.tar.gz
+==> Pouring videoproto-2.3.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/videoproto/2.3.3: 11 files, 103.9KB
+==> Installing python3 dependency: linuxbrew/xorg/xcmiscproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xcmiscproto-1.2.2.x86_64_linux.bottle.tar.gz
+==> Pouring xcmiscproto-1.2.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xcmiscproto/1.2.2: 7 files, 45.1KB
+==> Installing python3 dependency: linuxbrew/xorg/xf86bigfontproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xf86bigfontproto-1.2.0.x86_64_linux.bottle.tar.gz
+==> Pouring xf86bigfontproto-1.2.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xf86bigfontproto/1.2.0: 7 files, 34.5KB
+==> Installing python3 dependency: linuxbrew/xorg/xf86dgaproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xf86dgaproto-2.1.x86_64_linux.bottle.tar.gz
+==> Pouring xf86dgaproto-2.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xf86dgaproto/2.1: 11 files, 49.8KB
+==> Installing python3 dependency: linuxbrew/xorg/xf86driproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xf86driproto-2.1.1.x86_64_linux.bottle.tar.gz
+==> Pouring xf86driproto-2.1.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xf86driproto/2.1.1: 8 files, 48.7KB
+==> Installing python3 dependency: linuxbrew/xorg/xf86vidmodeproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xf86vidmodeproto-2.3.1.x86_64_linux.bottle.tar.gz
+==> Pouring xf86vidmodeproto-2.3.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xf86vidmodeproto/2.3.1: 8 files, 55KB
+==> Installing python3 dependency: linuxbrew/xorg/xineramaproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xineramaproto-1.2.1.x86_64_linux.bottle.tar.gz
+==> Pouring xineramaproto-1.2.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xineramaproto/1.2.1: 6 files, 44KB
+==> Installing python3 dependency: linuxbrew/xorg/xproto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xproto-7.0.31.x86_64_linux.bottle.tar.gz
+==> Pouring xproto-7.0.31.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xproto/7.0.31: 33 files, 496.0KB
+==> Installing python3 dependency: linuxbrew/xorg/xorg-protocols
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/317ef5e60c62298a28f08bb44ca6a09d79793735/README.md
+==> X.Org Protocols have been installed!
+🍺  /home/monday/.linuxbrew/Cellar/xorg-protocols/20170115: 3 files, 13.8KB, built in 3 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxau
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxau-1.0.8.x86_64_linux.bottle.tar.gz
+==> Pouring libxau-1.0.8.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxau/1.0.8: 19 files, 97.9KB
+==> Installing python3 dependency: linuxbrew/xorg/xcb-proto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xcb-proto-1.12_1.x86_64_linux.bottle.tar.gz
+==> Pouring xcb-proto-1.12_1.x86_64_linux.bottle.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /home/monday/.local/lib/python2.7/site-packages
+  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/xcb-proto/1.12_1: 46 files, 777.0KB
+==> Installing python3 dependency: linuxbrew/xorg/libpthread-stubs
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libpthread-stubs-0.3.x86_64_linux.bottle.tar.gz
+==> Pouring libpthread-stubs-0.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libpthread-stubs/0.3: 4 files, 14.6KB
+==> Installing python3 dependency: linuxbrew/xorg/libxdmcp
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxdmcp-1.1.2.x86_64_linux.bottle.tar.gz
+==> Pouring libxdmcp-1.1.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxdmcp/1.1.2: 10 files, 96.5KB
+==> Installing python3 dependency: gawk
+==> Downloading https://ftp.gnu.org/gnu/gawk/gawk-4.2.0.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/gawk/4.2.0_1 --without-libsigsegv-prefix
+==> make
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/gawk/4.2.0_1: 85 files, 6.6MB, built in 1 minute 22 seconds
+==> Installing python3 dependency: check
+==> Downloading https://linuxbrew.bintray.com/bottles/check-0.12.0.x86_64_linux.bottle.tar.gz
+==> Pouring check-0.12.0.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/check/0.12.0: 43 files, 1000.8KB
+==> Installing python3 dependency: python
+==> Downloading https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python/2.7.14_5 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python/2.7.14_5/share --datadir=/home/monday/.linuxbrew/Cellar/python/2.7.14_5/share --enable-shared --without-ensurepip MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
+==> make
+==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python/2.7.14_5
+==> Downloading https://files.pythonhosted.org/packages/a4/c8/9a7a47f683d54d83f648d37c3e180317f80dc126a304c45dc6663246233a/setuptools-36.5.0.zip
+==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> /home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
+==> /home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
+==> /home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin/python2 -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python/2.7.14_5/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
+==> Caveats
+This formula installs a python2 executable to /home/monday/.linuxbrew/bin.
+If you wish to have this formula's python executable in your PATH then add
+the following to ~/.bash_profile:
+  export PATH="/home/monday/.linuxbrew/opt/python/libexec/bin:$PATH"
+
+Pip and setuptools have been installed. To update them
+  pip2 install --upgrade pip setuptools
+
+You can install Python packages with
+  pip2 install <package>
+
+They will install into the site-package directory
+  /home/monday/.linuxbrew/lib/python2.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python.html
+
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /home/monday/.local/lib/python2.7/site-packages
+  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/python/2.7.14_5: 5,489 files, 106.9MB, built in 7 minutes 56 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxcb
+==> Downloading https://xcb.freedesktop.org/dist/libxcb-1.12.tar.bz2
+==> Downloading https://cgit.freedesktop.org/xcb/libxcb/patch/?id=8740a288ca468433141341347aa115b9544891d3
+==> Patching
+==> Applying id=8740a288ca468433141341347aa115b9544891d3
+patching file src/c_client.py
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxcb/1.12_1 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --enable-xevie --enable-xinput --enable-xprint --disable-silent-rules --enable-static=no --enable-devel-docs=no --with-doxygen=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxcb/1.12_1: 2,384 files, 6.9MB, built in 1 minute 1 second
+==> Installing python3 dependency: linuxbrew/xorg/libx11
+==> Downloading https://ftp.x.org/pub/individual/lib/libX11-1.6.5.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libX11-1.6.5.tar.bz2
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/master/patch_configure.diff
+==> Patching
+==> Applying patch_configure.diff
+patching file configure
+Hunk #1 succeeded at 18917 (offset 270 lines).
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libx11/1.6.5 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-static=no --enable-specs=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libx11/1.6.5: 1,037 files, 16.4MB, built in 1 minute 50 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxext
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxext-1.3.3.x86_64_linux.bottle.tar.gz
+==> Pouring libxext-1.3.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxext/1.3.3: 86 files, 349.8KB
+==> Installing python3 dependency: linuxbrew/xorg/libfs
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libfs-1.0.7.x86_64_linux.bottle.tar.gz
+==> Pouring libfs-1.0.7.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libfs/1.0.7: 10 files, 156.2KB
+==> Installing python3 dependency: linuxbrew/xorg/libice
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libice-1.0.9.x86_64_linux.bottle.tar.gz
+==> Pouring libice-1.0.9.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libice/1.0.9: 15 files, 215.4KB
+==> Installing python3 dependency: linuxbrew/xorg/libsm
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libsm-1.2.2.x86_64_linux.bottle.tar.gz
+==> Pouring libsm-1.2.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libsm/1.2.2: 12 files, 134.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxscrnsaver
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxscrnsaver-1.2.2.x86_64_linux.bottle.tar.gz
+==> Pouring libxscrnsaver-1.2.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxscrnsaver/1.2.2: 21 files, 97.5KB
+==> Installing python3 dependency: linuxbrew/xorg/libxt
+==> Downloading https://ftp.x.org/pub/individual/lib/libXt-1.1.5.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXt-1.1.5.tar.bz2
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/master/patch_configure.diff
+==> Patching
+==> Applying patch_configure.diff
+patching file configure
+Hunk #1 succeeded at 18224 (offset -423 lines).
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxt/1.1.5 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --with-appdefaultdir=/home/monday/.linuxbrew/etc/X11/app-defaults --disable-silent-rules --enable-static=no --enable-specs=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxt/1.1.5: 310 files, 3MB, built in 28 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxmu
+==> Downloading https://ftp.x.org/pub/individual/lib/libXmu-1.1.2.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXmu-1.1.2.tar.bz2
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/master/patch_configure.diff
+==> Patching
+==> Applying patch_configure.diff
+patching file configure
+Hunk #1 succeeded at 18084 (offset -563 lines).
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxmu/1.1.2 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-static=no --enable-docs=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxmu/1.1.2: 36 files, 806.8KB, built in 23 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxpm
+==> Downloading https://ftp.x.org/pub/individual/lib/libXpm-3.5.12.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXpm-3.5.12.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxpm/3.5.12 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --disable-static
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxpm/3.5.12: 16 files, 603.8KB, built in 22 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxaw
+==> Downloading https://ftp.x.org/pub/individual/lib/libXaw-1.0.13.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXaw-1.0.13.tar.bz2
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/master/patch_configure.diff
+==> Patching
+==> Applying patch_configure.diff
+patching file configure
+Hunk #1 succeeded at 18118 (offset -529 lines).
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxaw/1.0.13 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-static=no --enable-specs=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxaw/1.0.13: 88 files, 4.1MB, built in 35 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxaw3d
+==> Downloading https://www.x.org/archive/individual/lib/libXaw3d-1.6.2.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxaw3d/1.6.2 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-gray-stipples --enable-arrow-scrollbars --enable-multiplane-bitmaps --enable-static=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxaw3d/1.6.2: 85 files, 2.2MB, built in 27 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxfixes
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxfixes-5.0.3.x86_64_linux.bottle.tar.gz
+==> Pouring libxfixes-5.0.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxfixes/5.0.3: 12 files, 110.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxcomposite
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxcomposite-0.4.4.x86_64_linux.bottle.tar.gz
+==> Pouring libxcomposite-0.4.4.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxcomposite/0.4.4: 22 files, 93.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxrender
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxrender-0.9.10.x86_64_linux.bottle.tar.gz
+==> Pouring libxrender-0.9.10.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxrender/0.9.10: 12 files, 143.9KB
+==> Installing python3 dependency: linuxbrew/xorg/libxcursor
+==> Downloading https://ftp.x.org/pub/individual/lib/libXcursor-1.1.14.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXcursor-1.1.14.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxcursor/1.1.14 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-static=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxcursor/1.1.14: 43 files, 316.1KB, built in 19 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxdamage
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxdamage-1.1.4.x86_64_linux.bottle.tar.gz
+==> Pouring libxdamage-1.1.4.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxdamage/1.1.4: 11 files, 62.3KB
+==> Installing python3 dependency: linuxbrew/xorg/font-util
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/font-util-1.3.1.x86_64_linux.bottle.tar.gz
+==> Pouring font-util-1.3.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/font-util/1.3.1: 27 files, 325.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libfontenc
+==> Downloading https://ftp.x.org/pub/individual/lib/libfontenc-1.1.3.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libfontenc-1.1.3.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libfontenc/1.1.3 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --enable-static=no
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libfontenc/1.1.3: 10 files, 137KB, built in 16 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxfont
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxfont-1.5.2.x86_64_linux.bottle.1.tar.gz
+==> Pouring libxfont-1.5.2.x86_64_linux.bottle.1.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxfont/1.5.2: 25 files, 444.5KB
+==> Installing python3 dependency: gperf
+==> Downloading https://linuxbrew.bintray.com/bottles/gperf-3.1.x86_64_linux.bottle.tar.gz
+==> Pouring gperf-3.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/gperf/3.1: 11 files, 842.9KB
+==> Installing python3 dependency: fontconfig
+==> Downloading https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.12.6.tar.bz2
+==> autoreconf -iv
+==> ./configure --disable-silent-rules --enable-static --with-add-fonts=/System/Library/Fonts,/Library/Fonts,~/Library/Fonts --prefix=/home/monday/.linuxbrew/Cellar/fontconfig/2.12.6 --localstatedir=/home/monday/.linuxbrew/var --sysconfdir=/home/monday/.linuxbrew/etc
+==> make install RUN_FC_CACHE_TEST=false
+==> Regenerating font cache, this may take a while
+==> /home/monday/.linuxbrew/Cellar/fontconfig/2.12.6/bin/fc-cache -frv
+🍺  /home/monday/.linuxbrew/Cellar/fontconfig/2.12.6: 475 files, 5.4MB, built in 1 minute 51 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxft
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxft-2.3.2.x86_64_linux.bottle.tar.gz
+==> Pouring libxft-2.3.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxft/2.3.2: 13 files, 200.7KB
+==> Installing python3 dependency: linuxbrew/xorg/libxi
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxi-1.7.9.x86_64_linux.bottle.tar.gz
+==> Pouring libxi-1.7.9.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxi/1.7.9: 84 files, 563.4KB
+==> Installing python3 dependency: linuxbrew/xorg/libxinerama
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxinerama-1.1.3.x86_64_linux.bottle.tar.gz
+==> Pouring libxinerama-1.1.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxinerama/1.1.3: 15 files, 89.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxrandr
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxrandr-1.5.1.x86_64_linux.bottle.tar.gz
+==> Pouring libxrandr-1.5.1.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxrandr/1.5.1: 26 files, 174.5KB
+==> Installing python3 dependency: linuxbrew/xorg/libxres
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxres-1.0.7.x86_64_linux.bottle.tar.gz
+==> Pouring libxres-1.0.7.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxres/1.0.7: 16 files, 82.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxtst
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxtst-1.2.3.x86_64_linux.bottle.tar.gz
+==> Pouring libxtst-1.2.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxtst/1.2.3: 22 files, 134.2KB
+==> Installing python3 dependency: linuxbrew/xorg/libxv
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxv-1.0.11.x86_64_linux.bottle.tar.gz
+==> Pouring libxv-1.0.11.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxv/1.0.11: 37 files, 168.7KB
+==> Installing python3 dependency: linuxbrew/xorg/libxvmc
+==> Downloading https://ftp.x.org/pub/individual/lib/libXvMC-1.0.10.tar.bz2
+==> Downloading from https://ftp.x.org/archive//individual/lib/libXvMC-1.0.10.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxvmc/1.0.10 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --disable-silent-rules --disable-static
+==> make
+==> make check
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxvmc/1.0.10: 14 files, 257KB, built in 20 seconds
+==> Installing python3 dependency: linuxbrew/xorg/libxxf86dga
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxxf86dga-1.1.4.x86_64_linux.bottle.tar.gz
+==> Pouring libxxf86dga-1.1.4.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxxf86dga/1.1.4: 31 files, 113.8KB
+==> Installing python3 dependency: linuxbrew/xorg/libxxf86vm
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxxf86vm-1.1.4.x86_64_linux.bottle.tar.gz
+==> Pouring libxxf86vm-1.1.4.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxxf86vm/1.1.4: 32 files, 112.0KB
+==> Installing python3 dependency: linuxbrew/xorg/libdmx
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libdmx-1.1.3.x86_64_linux.bottle.tar.gz
+==> Pouring libdmx-1.1.3.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libdmx/1.1.3: 26 files, 133.4KB
+==> Installing python3 dependency: linuxbrew/xorg/libpciaccess
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libpciaccess-0.13.5.x86_64_linux.bottle.tar.gz
+==> Pouring libpciaccess-0.13.5.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libpciaccess/0.13.5: 11 files, 310.8KB
+==> Installing python3 dependency: linuxbrew/xorg/libxkbfile
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxkbfile-1.0.9.x86_64_linux.bottle.tar.gz
+==> Pouring libxkbfile-1.0.9.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxkbfile/1.0.9: 14 files, 236.3KB
+==> Installing python3 dependency: linuxbrew/xorg/libxshmfence
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/libxshmfence-1.2.x86_64_linux.bottle.tar.gz
+==> Pouring libxshmfence-1.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/libxshmfence/1.2: 9 files, 45.7KB
+==> Installing python3 dependency: linuxbrew/xorg/xdpyinfo
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xdpyinfo-1.3.2.x86_64_linux.bottle.tar.gz
+==> Pouring xdpyinfo-1.3.2.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xdpyinfo/1.3.2: 6 files, 92.3KB
+==> Installing python3 dependency: linuxbrew/xorg/xorg
+==> Downloading https://raw.githubusercontent.com/Linuxbrew/homebrew-xorg/317ef5e60c62298a28f08bb44ca6a09d79793735/README.md
+==> X.Org has been installed!
+🍺  /home/monday/.linuxbrew/Cellar/xorg/20170115_1: 3 files, 19.2KB, built in 12 seconds
+==> Installing python3 dependency: tcl-tk
+==> Downloading https://downloads.sourceforge.net/project/tcl/Tcl/8.6.8/tcl8.6.8-src.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/tcl/Tcl/8.6.8/tcl8.6.8-src.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1 --mandir=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1/share/man --enable-threads --enable-64bit
+==> make
+==> make install
+==> make install-private-headers
+==> Downloading https://downloads.sourceforge.net/project/tcl/Tcl/8.6.8/tk8.6.8-src.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/tcl/Tcl/8.6.8/tk8.6.8-src.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1 --mandir=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1/share/man --enable-threads --enable-64bit --without-x --with-tcl=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1/lib
+==> make
+==> make install
+==> make install-private-headers
+==> Downloading https://downloads.sourceforge.net/project/tcllib/tcllib/1.18/tcllib-1.18.tar.gz
+==> Downloading from https://nchc.dl.sourceforge.net/project/tcllib/tcllib/1.18/tcllib-1.18.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1 --mandir=/home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1/share/man
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/tcl-tk/8.6.8_1: 2,837 files, 30.5MB, built in 5 minutes 59 seconds
+==> Installing python3
+==> Downloading https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+==> Patching
+patching file setup.py
+Hunk #1 succeeded at 1821 (offset 122 lines).
+Hunk #2 succeeded at 1866 (offset 122 lines).
+Hunk #3 succeeded at 1889 (offset 122 lines).
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python3/3.6.4_3 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python3/3.6.4_3/share --datadir=/home/monday/.linuxbrew/Cellar/python3/3.6.4_3/share --enable-shared --without-ensurepip --enable-loadable-sqlite-extensions --with-system-ffi MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib -L/home/monday/.linuxbrew/opt/tcl-tk/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include -I/home/monday/.linuxbrew/opt/tcl-tk/include
+==> make
+==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python3/3.6.4_3
+==> Downloading https://files.pythonhosted.org/packages/a4/c8/9a7a47f683d54d83f648d37c3e180317f80dc126a304c45dc6663246233a/setuptools-36.5.0.zip
+==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall python3`
+==> Caveats
+Pip, setuptools, and wheel have been installed. To update them
+  pip3 install --upgrade pip setuptools wheel
+
+You can install Python packages with
+  pip3 install <package>
+
+They will install into the site-package directory
+  /home/monday/.linuxbrew/lib/python3.6/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python.html
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/python3/3.6.4_3: 7,221 files, 145.1MB, built in 5 minutes 38 seconds
+==> Determining python3 bottle rebuild...
+==> Bottling python3-3.6.4_3.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if python3-3.6.4_3.x86_64_linux.bottle.1.tar.gz is relocatable...
+./python3-3.6.4_3.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "2cb637280da1782129355ae1f734554e9b7f28ac67f6555dac65fd7b8a161df2" => :x86_64_linux
+    sha256 "bef42897258c06894b03d25bbf7e33c236f8506c3219222e5d35571738b32706" => :x86_64_linux
   end
