@@ -1,21 +1,19 @@
 ==> Upgrading 1 outdated package, with result:
-mpfr 4.0.1
-==> Upgrading mpfr 
-==> Downloading https://ftp.gnu.org/gnu/mpfr/mpfr-4.0.1.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/mpfr/4.0.1 --disable-silent-rules
-==> make
-==> make check
+sqlite 3.22.0
+==> Upgrading sqlite 
+==> Downloading https://sqlite.org/2018/sqlite-autoconf-3220000.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/sqlite/3.22.0 --enable-dynamic-extensions --enable-readline --disable-editline
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall mpfr`
-🍺  /home/monday/.linuxbrew/Cellar/mpfr/4.0.1: 29 files, 10.7MB, built in 3 minutes 1 second
-==> Determining mpfr bottle rebuild...
-==> Bottling mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./mpfr-4.0.1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall sqlite`
+🍺  /home/monday/.linuxbrew/Cellar/sqlite/3.22.0: 12 files, 19.2MB, built in 3 minutes 36 seconds
+==> Determining sqlite bottle rebuild...
+==> Bottling sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./sqlite-3.22.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "89ee373eabfa5d120b28ee2e7af7c72355d6b492c7c2081d796af326b0bf3150" => :x86_64_linux
+    sha256 "8c0da82a5e23ee2dc689370c2c76996b8ae2a1911f20cd3040bc4403e12d9a4c" => :x86_64_linux
   end
