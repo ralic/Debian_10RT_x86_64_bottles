@@ -1,22 +1,24 @@
-==> Installing dependencies for imagemagick: libtiff
-==> Installing imagemagick dependency: libtiff
-==> Downloading https://linuxbrew.bintray.com/bottles/libtiff-4.0.9_3.x86_64_linux.bottle.tar.gz
-==> Pouring libtiff-4.0.9_3.x86_64_linux.bottle.tar.gz
-🍺  /home/monday/.linuxbrew/Cellar/libtiff/4.0.9_3: 248 files, 8MB
-==> Installing imagemagick
-==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.7-23.tar.xz
-==> ./configure --disable-osx-universal-binary --prefix=/home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-23 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/home/monday/.linuxbrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall imagemagick`
-🍺  /home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-23: 1,531 files, 66.3MB, built in 7 minutes 53 seconds
-==> Determining imagemagick bottle rebuild...
-==> Bottling imagemagick-7.0.7-23.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if imagemagick-7.0.7-23.x86_64_linux.bottle.1.tar.gz is relocatable...
-./imagemagick-7.0.7-23.x86_64_linux.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> Updated Formulae
+artifactory
+cask
+duply
+elasticsearch@5.6
+fn
+kibana@5.6
+nuget
+pipenv
+presto
+storm
+
+==> Determining node bottle rebuild...
+==> Bottling node-9.5.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if node-9.5.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./node-9.5.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "d528d8c9682d340c9e65fbaa9aa6374d49e22035da977251ae2287ea800d197d" => :x86_64_linux
+    sha256 "40f2882c6d582a16105de90854b6bf27b93debdaa6d5cb779250cd1c87dd14bf" => :x86_64_linux
   end
