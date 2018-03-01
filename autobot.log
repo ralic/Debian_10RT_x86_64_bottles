@@ -1,56 +1,20 @@
-==> Downloading https://nodejs.org/dist/v9.6.1/node-v9.6.1.tar.xz
-Already downloaded: /home/monday/.cache/Homebrew/node-9.6.1.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/node/9.6.1 --without-npm --with-intl=system-icu
+==> Upgrading 1 outdated package, with result:
+gawk 4.2.1
+==> Upgrading gawk 
+==> Downloading https://ftp.gnu.org/gnu/gawk/gawk-4.2.1.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/gawk/4.2.1 --without-libsigsegv-prefix
+==> make
 ==> make install
-==> Downloading https://registry.npmjs.org/npm/-/npm-5.6.0.tgz
-Already downloaded: /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
-==> node /tmp/node-20180227-28037-1xvhofe/node-v9.6.1/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/monday/.linuxbrew/Cellar/node/9.6.1/libexec /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall node`
-==> Caveats
-Bash completion has been installed to:
-  /home/monday/.linuxbrew/etc/bash_completion.d
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/node/9.6.1: 5,139 files, 54.9MB, built in 31 minutes 33 seconds
-==> Auto-updated Homebrew!
-Updated 1 tap (homebrew/core).
-==> New Formulae
-stellar-core
-==> Updated Formulae
-augustus
-automake
-bmake
-clojure
-direnv
-eralchemy
-fluid-synth
-fn
-gnome-autoar
-imagemagick
-imagemagick@6
-jenkins
-jpeg
-kube-ps1
-mikutter
-mitmproxy
-mpd
-mrboom
-pmd
-rst-lint
-sound-touch
-stone-soup
-svtplay-dl
-sylpheed
-terragrunt
-youtube-dl
-
-==> Determining node bottle rebuild...
-==> Bottling node-9.6.1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if node-9.6.1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./node-9.6.1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall gawk`
+🍺  /home/monday/.linuxbrew/Cellar/gawk/4.2.1: 85 files, 6.7MB, built in 1 minute
+==> Determining gawk bottle rebuild...
+==> Bottling gawk-4.2.1.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if gawk-4.2.1.x86_64_linux.bottle.1.tar.gz is relocatable...
+./gawk-4.2.1.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "19b0dfa17a4900c5f94592140cb72558de1ad7dae7baf0ae8718d98fad6b6ad4" => :x86_64_linux
+    sha256 "528deef1072a67f849f56ab257217ca105797f46ea86cd927262d7bd8aee4fd9" => :x86_64_linux
   end
