@@ -1,19 +1,17 @@
 ==> Upgrading 1 outdated package, with result:
-jpeg 9c
-==> Upgrading jpeg 
-==> Downloading http://www.ijg.org/files/jpegsrc.v9c.tar.gz
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/jpeg/9c
+automake 1.16
+==> Upgrading automake 
+==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.16.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/automake/1.16
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall jpeg`
-🍺  /home/monday/.linuxbrew/Cellar/jpeg/9c: 22 files, 3.9MB, built in 24 seconds
-==> Determining jpeg bottle rebuild...
-==> Bottling jpeg-9c.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if jpeg-9c.x86_64_linux.bottle.1.tar.gz is relocatable...
-./jpeg-9c.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall automake`
+🍺  /home/monday/.linuxbrew/Cellar/automake/1.16: 131 files, 3.1MB, built in 13 seconds
+==> Determining automake bottle rebuild...
+==> Bottling automake-1.16.x86_64_linux.bottle.1.tar.gz...
+./automake-1.16.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "3cd527cfb57b412eaefc38f88929c343e24273a635b156e2311001d77157f75a" => :x86_64_linux
+    sha256 "99f416c706ff84f1fc0803a46d9511abc76c2be91f66b5f9ce47a76943261ab2" => :x86_64_linux
   end
