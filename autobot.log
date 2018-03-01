@@ -1,17 +1,19 @@
 ==> Upgrading 1 outdated package, with result:
-automake 1.16
-==> Upgrading automake 
-==> Downloading https://ftp.gnu.org/gnu/automake/automake-1.16.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/automake/1.16
+imagemagick 7.0.7-24
+==> Upgrading imagemagick 
+==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.7-24.tar.xz
+==> ./configure --disable-osx-universal-binary --prefix=/home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-24 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/home/monday/.linuxbrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall automake`
-🍺  /home/monday/.linuxbrew/Cellar/automake/1.16: 131 files, 3.1MB, built in 13 seconds
-==> Determining automake bottle rebuild...
-==> Bottling automake-1.16.x86_64_linux.bottle.1.tar.gz...
-./automake-1.16.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall imagemagick`
+🍺  /home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-24: 1,531 files, 66MB, built in 6 minutes 48 seconds
+==> Determining imagemagick bottle rebuild...
+==> Bottling imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz is relocatable...
+./imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "99f416c706ff84f1fc0803a46d9511abc76c2be91f66b5f9ce47a76943261ab2" => :x86_64_linux
+    sha256 "5fd550e53c7b9b4ebbe90592ba1d0ef408ff3f0ed9188365141f26e3a168ae77" => :x86_64_linux
   end
