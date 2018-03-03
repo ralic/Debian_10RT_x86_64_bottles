@@ -24,10 +24,11 @@ mitofy*.tar.gz
 openbr*.tar.gz
 repeatmasker-*.tar.gz
 gap-*.gz
-transdecoder-5.0.2.x86_64_linux.bottle.1.tar.gz
-humann2-0.4.0_1.x86_64_linux.bottle.1.tar.gz
+transdecoder-*.x86_64_linux.bottle.1.tar.gz
+humann2-*.x86_64_linux.bottle.1.tar.gz
 joshua-*.tar.gz
-mingw-w64-5.0.3.x86_64_linux.bottle.1.tar.gz
-mitie-0.5.x86_64_linux.bottle.1.tar.gz
+mingw-w64-*.x86_64_linux.bottle.1.tar.gz
+mitie-*.x86_64_linux.bottle.1.tar.gz
+mongodb-*.x86_64_linux.bottle.1.tar.gz
 mysql*.tar.gz
 amos*.tar.gz

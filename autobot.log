@@ -1,19 +1,37 @@
-==> Upgrading 1 outdated package, with result:
-imagemagick 7.0.7-24
-==> Upgrading imagemagick 
-==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.7-24.tar.xz
-==> ./configure --disable-osx-universal-binary --prefix=/home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-24 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/home/monday/.linuxbrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
-==> make install
+==> Downloading https://fastdl.mongodb.org/src/mongodb-src-r3.6.3.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb-3.6.3.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/cd/b0/c2d700252fc251e91c08639ff41a8a5203b627f4e0a2ae18a6b662ab32ea/Cheetah-2.4.4.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--Cheetah-2.4.4.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180302-19345-bdtoq1/mongodb-src-r3.6.3/vendor --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/4a/85/db5a2df477072b2902b0eb892feb37d88ac635d36245a72a6a69b23b383a/PyYAML-3.12.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--PyYAML-3.12.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180302-19345-bdtoq1/mongodb-src-r3.6.3/vendor --single-version-externally-managed --record=installed.txt
+==> Downloading https://files.pythonhosted.org/packages/ec/cc/28444132a25c113149cec54618abc909596f0b272a74c55bab9593f8876c/typing-3.6.4.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/mongodb--typing-3.6.4.tar.gz
+==> python -c import setuptools... --no-user-cfg install --prefix=/tmp/mongodb-20180302-19345-bdtoq1/mongodb-src-r3.6.3/vendor --single-version-externally-managed --record=installed.txt
+==> bash ./build.sh ssl
+==> /home/monday/.linuxbrew/opt/scons/bin/scons install --prefix=/home/monday/.linuxbrew/Cellar/mongodb/3.6.3 -j4 CC=/home/monday/.linuxbrew/bin/gcc-7 CXX=/home/monday/.linuxbrew/bin/g++-7 -std=c++11 CCFLAGS=-mmacosx-version-min=0 LINKFLAGS=-mmacosx-version-min=0 --use-new-tools --build-mongoreplay=true --disable-warnings-as-errors --ssl CCFLAGS=-I/home/monday/.linuxbrew/opt/openssl/include LINKFLAGS=-L/home/monday/.linuxbrew/opt/openssl/lib
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall imagemagick`
-🍺  /home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-24: 1,531 files, 66MB, built in 6 minutes 48 seconds
-==> Determining imagemagick bottle rebuild...
-==> Bottling imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz is relocatable...
-./imagemagick-7.0.7-24.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall mongodb`
+🍺  /home/monday/.linuxbrew/Cellar/mongodb/3.6.3: 17 files, 2.7GB, built in 120 minutes 33 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+octomap
+==> Updated Formulae
+charm-tools
+gobject-introspection
+grafana
+libunistring
+pyenv
+
+==> Determining mongodb bottle rebuild...
+==> Bottling mongodb-3.6.3.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if mongodb-3.6.3.x86_64_linux.bottle.1.tar.gz is relocatable...
+./mongodb-3.6.3.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "5fd550e53c7b9b4ebbe90592ba1d0ef408ff3f0ed9188365141f26e3a168ae77" => :x86_64_linux
+    sha256 "47a7d2604f2a7b0b6b20a85ca11283ce8e8d00abfa2d87bd72534c3d6b2ac251" => :x86_64_linux
   end
