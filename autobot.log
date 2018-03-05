@@ -1,30 +1,10 @@
-==> Tapping linuxbrew/extra
-Tapped 5 formulae (54 files, 196.6KB)
-==> Installing dependencies for postgresql: libxslt, perl, util-linux
-==> Installing postgresql dependency: libxslt
-==> Downloading http://xmlsoft.org/sources/libxslt-1.1.32.tar.gz
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/libxslt/1.1.32 --without-crypto --with-libxml-prefix=/home/monday/.linuxbrew/opt/libxml2
-==> make
-==> make install
-==> Caveats
-To allow the nokogiri gem to link against this libxslt run:
-  gem install nokogiri -- --with-xslt-dir=/home/monday/.linuxbrew/opt/libxslt
-
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /home/monday/.local/lib/python2.7/site-packages
-  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/libxslt/1.1.32: 150 files, 7.3MB, built in 56 seconds
-==> Installing postgresql dependency: perl
 ==> Downloading https://www.cpan.org/src/5.0/perl-5.26.1.tar.xz
+Already downloaded: /home/monday/.cache/Homebrew/perl-5.26.1.tar.xz
 ==> ./Configure -des -Dprefix=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1 -Dprivlib=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/lib/perl5/5.26.1 -Dsitelib=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/lib/perl5/site_perl/5.26.1 -Dotherlibdirs=/home/monday/.linuxbrew/lib/perl5/site_perl/5.26.1 -Dperlpath=/home/monday/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/monday/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/share/man/man1 -Dman3dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/monday/.linuxbrew/include
 ==> make
 ==> make install
-==> /home/monday/.linuxbrew/Cellar/perl/5.26.1_1/bin/cpan -i XML::Parser
-==> /home/monday/.linuxbrew/Cellar/perl/5.26.1_1/bin/cpan -i XML::SAX
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall perl`
 ==> Caveats
 By default non-brewed cpan modules are installed to the Cellar. If you wish
 for your modules to persist across updates we recommend using `local::lib`.
@@ -33,45 +13,14 @@ You can set that up like this:
   PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
   echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >> ~/.bash_profile
 ==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/perl/5.26.1_1: 2,729 files, 68.0MB, built in 10 minutes 31 seconds
-==> Installing postgresql dependency: util-linux
-==> Downloading https://www.kernel.org/pub/linux/utils/util-linux/v2.30/util-linux-2.30.1.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/util-linux/2.30.1 --disable-use-tty-group --disable-kill --disable-cal --disable-ul --without-systemd --with-bashcompletiondir=/home/monday/.linuxbrew/Cellar/util-linux/2.30.1/etc/bash_completion.d --disable-chfn-chsh --disable-login --disable-su --disable-runuser
-==> make install
-==> Caveats
-Some commands were moved to the bsdmainutils formula.
-  You may wish to install it as well.
-
-Bash completion has been installed to:
-  /home/monday/.linuxbrew/etc/bash_completion.d
-
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /home/monday/.local/lib/python2.7/site-packages
-  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/util-linux/2.30.1: 363 files, 32.3MB, built in 2 minutes 38 seconds
-==> Installing postgresql
-==> Downloading https://ftp.postgresql.org/pub/source/v10.2/postgresql-10.2.tar.bz2
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/postgresql/10.2 --datadir=/home/monday/.linuxbrew/share/postgresql --libdir=/home/monday/.linuxbrew/lib --sysconfdir=/home/monday/.linuxbrew/etc --docdir=/home/monday/.linuxbrew/Cellar/postgresql/10.2/share/doc/postgresql --enable-thread-safety --with-openssl --with-libxml --with-libxslt --with-perl --with-uuid=e2fs
-==> make
-==> make install-world datadir=/home/monday/.linuxbrew/Cellar/postgresql/10.2/share/postgresql libdir=/home/monday/.linuxbrew/Cellar/postgresql/10.2/lib pkglibdir=/home/monday/.linuxbrew/Cellar/postgresql/10.2/lib/postgresql
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall postgresql`
-==> Caveats
-To migrate existing data from a previous major version of PostgreSQL run:
-  brew postgresql-upgrade-database
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/postgresql/10.2: 3,369 files, 42.3MB, built in 5 minutes 8 seconds
-==> Determining postgresql bottle rebuild...
-==> Bottling postgresql-10.2.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if postgresql-10.2.x86_64_linux.bottle.1.tar.gz is relocatable...
-./postgresql-10.2.x86_64_linux.bottle.1.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/perl/5.26.1_1: 2,402 files, 65.2MB, built in 4 minutes 33 seconds
+==> Determining perl bottle rebuild...
+==> Bottling perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz...
+==> Detecting if perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz is relocatable...
+./perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
-    rebuild 1
-    sha256 "fc7ed70c6fcc69f0fb6114b1ba71fd98787a11791d59d68d4b0f3e06a0f87ee6" => :x86_64_linux
+    rebuild 2
+    sha256 "8cdfc623eb47128e50e9936c17d51ba805a50e56f75d5dfd50421702fa37904b" => :x86_64_linux
   end
