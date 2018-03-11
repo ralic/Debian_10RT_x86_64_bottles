@@ -1,19 +1,56 @@
-==> Downloading https://sites.google.com/site/tstyblo/wmctrl/wmctrl-1.07.tar.gz
-==> Downloading from https://sites.google.com/site/tstyblo/wmctrl/wmctrl-1.07.tar.gz?attredirects=0
+==> Installing dependencies for xdotool: linuxbrew/xorg/xcb-proto, linuxbrew/xorg/libxcb, linuxbrew/xorg/xkeyboardconfig, libxkbcommon
+==> Installing xdotool dependency: linuxbrew/xorg/xcb-proto
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xcb-proto-1.12_2.x86_64_linux.bottle.tar.gz
+==> Pouring xcb-proto-1.12_2.x86_64_linux.bottle.tar.gz
+==> Caveats
+Python modules have been installed and Homebrew's site-packages is not
+in your Python sys.path, so you will not be able to import the modules
+this formula installed. If you plan to develop with these modules,
+please run:
+  mkdir -p /home/monday/.local/lib/python2.7/site-packages
+  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/xcb-proto/1.12_2: 46 files, 776.9KB
+==> Installing xdotool dependency: linuxbrew/xorg/libxcb
+==> Downloading https://xcb.freedesktop.org/dist/libxcb-1.12.tar.bz2
+==> Downloading https://cgit.freedesktop.org/xcb/libxcb/patch/?id=8740a288ca468433141341347aa115b9544891d3
 ==> Patching
-patching file main.c
-Hunk #1 succeeded at 1425 with fuzz 1.
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/wmctrl/1.07 --mandir=/home/monday/.linuxbrew/Cellar/wmctrl/1.07/share/man
+==> Applying id=8740a288ca468433141341347aa115b9544891d3
+patching file src/c_client.py
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxcb/1.12_2 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --enable-xevie --enable-xinput --enable-xprint --disable-silent-rules --enable-static=no --enable-devel-docs=no --with-doxygen=no
+==> make
+==> make check
 ==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxcb/1.12_2: 2,384 files, 6.8MB, built in 1 minute 22 seconds
+==> Installing xdotool dependency: linuxbrew/xorg/xkeyboardconfig
+==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xkeyboardconfig-2.20.x86_64_linux.bottle.tar.gz
+==> Pouring xkeyboardconfig-2.20.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xkeyboardconfig/2.20: 337 files, 5.8MB
+==> Installing xdotool dependency: libxkbcommon
+==> Downloading https://xkbcommon.org/download/libxkbcommon-0.8.0.tar.xz
+==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/libxkbcommon/0.8.0_1
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/libxkbcommon/0.8.0_1: 21 files, 3.5MB, built in 1 minute 2 seconds
+==> Installing xdotool
+==> Downloading https://github.com/jordansissel/xdotool/archive/v3.20160805.1.tar.gz
+==> Downloading from https://codeload.github.com/jordansissel/xdotool/tar.gz/v3.20160805.1
+==> make PREFIX=/home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1 INSTALLMAN=/home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1/share/man install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall wmctrl`
-🍺  /home/monday/.linuxbrew/Cellar/wmctrl/1.07: 9 files, 160.0KB, built in 18 seconds
-==> Determining wmctrl bottle rebuild...
-==> Bottling wmctrl-1.07.x86_64_linux.bottle.1.tar.gz...
-./wmctrl-1.07.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall xdotool`
+==> Caveats
+You will probably want to enable XTEST in your X11 server now by running:
+  defaults write org.x.X11 enable_test_extensions -boolean true
+
+For the source of this useful hint:
+  https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1: 10 files, 596.5KB, built in 47 seconds
+==> Determining xdotool bottle rebuild...
+==> Bottling xdotool-3.20160805.1_1.x86_64_linux.bottle.1.tar.gz...
+./xdotool-3.20160805.1_1.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "85d1d0587c2e0b0e9a2177dd9e5afcefb5b300afa6fa7234ff5cd0fe12845f23" => :x86_64_linux
+    sha256 "6d7676c7de3e156a73c16e97cd37bcbd3fb880ea6bdfa364c3088dfaf48d5950" => :x86_64_linux
   end
