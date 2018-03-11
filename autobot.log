@@ -1,26 +1,18 @@
-==> Downloading https://www.cpan.org/src/5.0/perl-5.26.1.tar.xz
-Already downloaded: /home/monday/.cache/Homebrew/perl-5.26.1.tar.xz
-==> ./Configure -des -Dprefix=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1 -Dprivlib=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/lib/perl5/5.26.1 -Dsitelib=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/lib/perl5/site_perl/5.26.1 -Dotherlibdirs=/home/monday/.linuxbrew/lib/perl5/site_perl/5.26.1 -Dperlpath=/home/monday/.linuxbrew/opt/perl/bin/perl -Dstartperl=#!/home/monday/.linuxbrew/opt/perl/bin/perl -Dman1dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/share/man/man1 -Dman3dir=/home/monday/.linuxbrew/Cellar/perl/5.26.1_1/share/man/man3 -Duseshrplib -Duselargefiles -Dusethreads -Dlocincpth=/home/monday/.linuxbrew/include
+==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
 ==> make
+==> make test
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall perl`
-==> Caveats
-By default non-brewed cpan modules are installed to the Cellar. If you wish
-for your modules to persist across updates we recommend using `local::lib`.
-
-You can set that up like this:
-  PERL_MM_OPT="INSTALL_BASE=$HOME/perl5" cpan local::lib
-  echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"' >> ~/.bash_profile
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/perl/5.26.1_1: 2,402 files, 65.2MB, built in 4 minutes 33 seconds
-==> Determining perl bottle rebuild...
-==> Bottling perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz...
-==> Detecting if perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz is relocatable...
-./perl-5.26.1_1.x86_64_linux.bottle.2.tar.gz
+You can run it manually using `brew postinstall pcre`
+🍺  /home/monday/.linuxbrew/Cellar/pcre/8.41: 209 files, 16.8MB, built in 2 minutes 41 seconds
+==> Determining pcre bottle rebuild...
+==> Bottling pcre-8.41.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if pcre-8.41.x86_64_linux.bottle.1.tar.gz is relocatable...
+./pcre-8.41.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
-    rebuild 2
-    sha256 "8cdfc623eb47128e50e9936c17d51ba805a50e56f75d5dfd50421702fa37904b" => :x86_64_linux
+    rebuild 1
+    sha256 "225f61ae23bb26d2ae219cc287360c5f0ec2c82001942a0a67bca43fdb6606c7" => :x86_64_linux
   end
