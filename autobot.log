@@ -1,18 +1,48 @@
-==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.41.tar.bz2
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/pcre/8.41 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
+==> Downloading https://download.gnome.org/sources/glib/2.54/glib-2.54.3.tar.xz
+Already downloaded: /home/monday/.cache/Homebrew/glib-2.54.3.tar.xz
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/59e4d32/glib/hardcoded-paths.diff
+Already downloaded: /home/monday/.cache/Homebrew/glib--patch-a4cb96b5861672ec0750cb30ecebe1d417d38052cac12fbb8a77dbf04a886fcb.diff
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/13efbb2/glib/gio.patch
+Already downloaded: /home/monday/.cache/Homebrew/glib--patch-628f8ea171a29c67fb06461ce4cfe549846b8fe64d83466e18e225726615b997.patch
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/73738ca/glib/revert-appinfo-contenttype.patch
+Already downloaded: /home/monday/.cache/Homebrew/glib--patch-675369c6d956b5533865178a2a78a6b2dcb921fbcfd81d35e92fc1592323e5e4.patch
+==> Patching
+==> Applying hardcoded-paths.diff
+patching file gio/gdbusprivate.c
+Hunk #1 succeeded at 2098 (offset -1 lines).
+Hunk #2 succeeded at 2108 (offset -1 lines).
+patching file gio/xdgmime/xdgmime.c
+patching file glib/gutils.c
+Hunk #1 succeeded at 2017 with fuzz 2 (offset 79 lines).
+==> Applying gio.patch
+patching file configure.ac
+patching file gio/Makefile.am
+Hunk #1 succeeded at 137 (offset 2 lines).
+Hunk #2 succeeded at 290 (offset 8 lines).
+Hunk #3 succeeded at 608 (offset 23 lines).
+==> Applying revert-appinfo-contenttype.patch
+patching file gio/Makefile.am
+Hunk #3 succeeded at 394 (offset 5 lines).
+Hunk #4 succeeded at 871 (offset 4 lines).
+Hunk #5 succeeded at 881 (offset 4 lines).
+patching file gio/giomodule.c
+patching file gio/glocalfileinfo.c
+Hunk #1 succeeded at 1269 (offset 10 lines).
+patching file gio/tests/Makefile.am
+==> autoreconf -i -f
+==> ./configure --disable-maintainer-mode --disable-silent-rules --disable-dtrace --disable-libelf --disable-selinux --enable-static --prefix=/home/monday/.linuxbrew/Cellar/glib/2.54.3 --localstatedir=/home/monday/.linuxbrew/var --with-gio-module-dir=/home/monday/.linuxbrew/lib/gio/modules
 ==> make
-==> make test
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pcre`
-🍺  /home/monday/.linuxbrew/Cellar/pcre/8.41: 209 files, 16.8MB, built in 2 minutes 41 seconds
-==> Determining pcre bottle rebuild...
-==> Bottling pcre-8.41.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if pcre-8.41.x86_64_linux.bottle.1.tar.gz is relocatable...
-./pcre-8.41.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall glib`
+🍺  /home/monday/.linuxbrew/Cellar/glib/2.54.3: 451 files, 57.7MB, built in 6 minutes 34 seconds
+==> Determining glib bottle rebuild...
+==> Bottling glib-2.54.3.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if glib-2.54.3.x86_64_linux.bottle.1.tar.gz is relocatable...
+./glib-2.54.3.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "225f61ae23bb26d2ae219cc287360c5f0ec2c82001942a0a67bca43fdb6606c7" => :x86_64_linux
+    sha256 "66a62e4b5b6cc5609116190e07a73c5a021f37ac489a608ca09645fa200f08e2" => :x86_64_linux
   end
