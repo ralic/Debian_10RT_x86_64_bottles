@@ -1,17 +1,19 @@
 ==> Upgrading 1 outdated package, with result:
-help2man 1.47.6
-==> Upgrading help2man 
-==> Downloading https://ftp.gnu.org/gnu/help2man/help2man-1.47.6.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/help2man/1.47.6
+imagemagick 7.0.7-25
+==> Upgrading imagemagick 
+==> Downloading https://dl.bintray.com/homebrew/mirror/imagemagick-7.0.7-25.tar.xz
+==> ./configure --disable-osx-universal-binary --prefix=/home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-25 --disable-silent-rules --enable-shared --enable-static --with-modules --disable-opencl --disable-openmp --without-webp --without-openjp2 --without-gslib --with-gs-font-dir=/home/monday/.linuxbrew/share/ghostscript/fonts --without-fftw --without-pango --without-x --with-freetype=yes --without-wmf
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall help2man`
-🍺  /home/monday/.linuxbrew/Cellar/help2man/1.47.6: 57 files, 917KB, built in 7 seconds
-==> Determining help2man bottle rebuild...
-==> Bottling help2man-1.47.6.x86_64_linux.bottle.1.tar.gz...
-./help2man-1.47.6.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall imagemagick`
+🍺  /home/monday/.linuxbrew/Cellar/imagemagick/7.0.7-25: 1,529 files, 65.4MB, built in 11 minutes 5 seconds
+==> Determining imagemagick bottle rebuild...
+==> Bottling imagemagick-7.0.7-25.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if imagemagick-7.0.7-25.x86_64_linux.bottle.1.tar.gz is relocatable...
+./imagemagick-7.0.7-25.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "33584ee2c4ea340fe5601d4d1cc626f9eb3c4166a3da5bbd5bc791307dc2791f" => :x86_64_linux
+    sha256 "88298eb7e6159c91b343a43a91ca387ca06b364f649ce70648d3cd9afe699524" => :x86_64_linux
   end
