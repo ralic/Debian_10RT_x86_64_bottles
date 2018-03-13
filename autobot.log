@@ -1,20 +1,17 @@
 ==> Upgrading 1 outdated package, with result:
-libxml2 2.9.7_1
-==> Upgrading libxml2 
-==> Downloading http://xmlsoft.org/sources/libxml2-2.9.7.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxml2/2.9.7_1 --without-python --without-lzma
+help2man 1.47.6
+==> Upgrading help2man 
+==> Downloading https://ftp.gnu.org/gnu/help2man/help2man-1.47.6.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/help2man/1.47.6
 ==> make install
-==> python2 setup.py install --prefix=/home/monday/.linuxbrew/Cellar/libxml2/2.9.7_1
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall libxml2`
-🍺  /home/monday/.linuxbrew/Cellar/libxml2/2.9.7_1: 284 files, 23.9MB, built in 2 minutes 3 seconds
-==> Determining libxml2 bottle rebuild...
-==> Bottling libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall help2man`
+🍺  /home/monday/.linuxbrew/Cellar/help2man/1.47.6: 57 files, 917KB, built in 7 seconds
+==> Determining help2man bottle rebuild...
+==> Bottling help2man-1.47.6.x86_64_linux.bottle.1.tar.gz...
+./help2man-1.47.6.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "d16d9e4fe7b550638fa80c1cfa078f967a8cbfb837560c9415af5bc31399b8c3" => :x86_64_linux
+    sha256 "33584ee2c4ea340fe5601d4d1cc626f9eb3c4166a3da5bbd5bc791307dc2791f" => :x86_64_linux
   end
