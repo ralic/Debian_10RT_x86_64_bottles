@@ -1,83 +1,25 @@
 ==> Upgrading 1 outdated package, with result:
-python 3.6.4_5
-==> Upgrading python 
-==> Installing dependencies for python: python@2, sphinx-doc
-==> Installing python dependency: python@2
-==> Downloading https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/share --datadir=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/share --enable-shared --without-ensurepip MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
-==> make
-==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4
-==> Downloading https://files.pythonhosted.org/packages/e0/02/2b14188e06ddf61e5b462e216b15d893e8472fca28b1b0c5d9272ad7e87c/setuptools-38.5.2.zip
-==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
-==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
-==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
-==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
-==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
-==> Caveats
-Pip and setuptools have been installed. To update them
-  pip install --upgrade pip setuptools
-
-You can install Python packages with
-  pip install <package>
-
-They will install into the site-package directory
-  /home/monday/.linuxbrew/lib/python2.7/site-packages
-
-See: https://docs.brew.sh/Homebrew-and-Python
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4: 5,498 files, 107.5MB, built in 10 minutes 30 seconds
-==> Installing python dependency: sphinx-doc
-==> Downloading https://linuxbrew.bintray.com/bottles/sphinx-doc-1.7.1.x86_64_linux.bottle.tar.gz
-==> Pouring sphinx-doc-1.7.1.x86_64_linux.bottle.tar.gz
-==> Caveats
-This formula is keg-only, which means it was not symlinked into /home/monday/.linuxbrew,
-because this formula is mainly used internally by other formulae.
-Users are advised to use `pip` to install sphinx-doc.
-
-If you need to have this software first in your PATH run:
-  echo 'export PATH="/home/monday/.linuxbrew/opt/sphinx-doc/bin:$PATH"' >> ~/.bash_profile
-
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/sphinx-doc/1.7.1: 2,626 files, 37.5MB
-==> Installing python
-==> Downloading https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python/3.6.4_5 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python/3.6.4_5/share --datadir=/home/monday/.linuxbrew/Cellar/python/3.6.4_5/share --enable-shared --enable-loadable-sqlite-extensions --without-ensurepip --with-system-ffi MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
-==> make
-==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python/3.6.4_5
-==> Downloading https://files.pythonhosted.org/packages/e0/02/2b14188e06ddf61e5b462e216b15d893e8472fca28b1b0c5d9272ad7e87c/setuptools-38.5.2.zip
-==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
-==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+node 9.8.0
+==> Upgrading node 
+==> Downloading https://nodejs.org/dist/v9.8.0/node-v9.8.0.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/node/9.8.0 --without-npm --with-intl=system-icu
+==> make install
+==> Downloading https://registry.npmjs.org/npm/-/npm-5.6.0.tgz
+==> node /tmp/node-20180313-16967-1nljjqr/node-v9.8.0/npm_bootstrap/bin/npm-cli.js install -ddd --global --prefix=/home/monday/.linuxbrew/Cellar/node/9.8.0/libexec /home/monday/.cache/Homebrew/node--npm-5.6.0.tgz
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall python`
+You can run it manually using `brew postinstall node`
 ==> Caveats
-Python has been installed as
-  /home/monday/.linuxbrew/bin/python3
-
-Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
-`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
-  /home/monday/.linuxbrew/opt/python/libexec/bin
-
-If you need Homebrew's Python 2.7 run
-  brew install python@2
-
-Pip, setuptools, and wheel have been installed. To update them run
-  pip3 install --upgrade pip setuptools wheel
-
-You can install Python packages with
-  pip3 install <package>
-They will install into the site-package directory
-  /home/monday/.linuxbrew/lib/python3.6/site-packages
-
-See: https://docs.brew.sh/Homebrew-and-Python
+Bash completion has been installed to:
+  /home/monday/.linuxbrew/etc/bash_completion.d
 ==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/python/3.6.4_5: 7,231 files, 144.8MB, built in 10 minutes 13 seconds
-==> Determining python bottle rebuild...
-==> Bottling python-3.6.4_5.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if python-3.6.4_5.x86_64_linux.bottle.1.tar.gz is relocatable...
-./python-3.6.4_5.x86_64_linux.bottle.1.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/node/9.8.0: 5,139 files, 55MB, built in 44 minutes 21 seconds
+==> Determining node bottle rebuild...
+==> Bottling node-9.8.0.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if node-9.8.0.x86_64_linux.bottle.1.tar.gz is relocatable...
+./node-9.8.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "a4f9719028a4007ff9a443128f34bc54fe62152b7249e095bb4d5e3b982a241b" => :x86_64_linux
+    sha256 "dedec12be6222b731a63e49bc6875758ae109e5441c99a9d370688d4b91e6f58" => :x86_64_linux
   end
