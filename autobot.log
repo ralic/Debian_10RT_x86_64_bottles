@@ -1,56 +1,83 @@
-==> Installing dependencies for xdotool: linuxbrew/xorg/xcb-proto, linuxbrew/xorg/libxcb, linuxbrew/xorg/xkeyboardconfig, libxkbcommon
-==> Installing xdotool dependency: linuxbrew/xorg/xcb-proto
-==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xcb-proto-1.12_2.x86_64_linux.bottle.tar.gz
-==> Pouring xcb-proto-1.12_2.x86_64_linux.bottle.tar.gz
-==> Caveats
-Python modules have been installed and Homebrew's site-packages is not
-in your Python sys.path, so you will not be able to import the modules
-this formula installed. If you plan to develop with these modules,
-please run:
-  mkdir -p /home/monday/.local/lib/python2.7/site-packages
-  echo 'import site; site.addsitedir("/home/monday/.linuxbrew/lib/python2.7/site-packages")' >> /home/monday/.local/lib/python2.7/site-packages/homebrew.pth
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/xcb-proto/1.12_2: 46 files, 776.9KB
-==> Installing xdotool dependency: linuxbrew/xorg/libxcb
-==> Downloading https://xcb.freedesktop.org/dist/libxcb-1.12.tar.bz2
-==> Downloading https://cgit.freedesktop.org/xcb/libxcb/patch/?id=8740a288ca468433141341347aa115b9544891d3
-==> Patching
-==> Applying id=8740a288ca468433141341347aa115b9544891d3
-patching file src/c_client.py
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/libxcb/1.12_2 --sysconfdir=/home/monday/.linuxbrew/etc --localstatedir=/home/monday/.linuxbrew/var --enable-xevie --enable-xinput --enable-xprint --disable-silent-rules --enable-static=no --enable-devel-docs=no --with-doxygen=no
+==> Upgrading 1 outdated package, with result:
+python 3.6.4_5
+==> Upgrading python 
+==> Installing dependencies for python: python@2, sphinx-doc
+==> Installing python dependency: python@2
+==> Downloading https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/share --datadir=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/share --enable-shared --without-ensurepip MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
 ==> make
-==> make check
-==> make install
-🍺  /home/monday/.linuxbrew/Cellar/libxcb/1.12_2: 2,384 files, 6.8MB, built in 1 minute 22 seconds
-==> Installing xdotool dependency: linuxbrew/xorg/xkeyboardconfig
-==> Downloading https://linuxbrew.bintray.com/bottles-xorg/xkeyboardconfig-2.20.x86_64_linux.bottle.tar.gz
-==> Pouring xkeyboardconfig-2.20.x86_64_linux.bottle.tar.gz
-🍺  /home/monday/.linuxbrew/Cellar/xkeyboardconfig/2.20: 337 files, 5.8MB
-==> Installing xdotool dependency: libxkbcommon
-==> Downloading https://xkbcommon.org/download/libxkbcommon-0.8.0.tar.xz
-==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/libxkbcommon/0.8.0_1
-==> make install
-🍺  /home/monday/.linuxbrew/Cellar/libxkbcommon/0.8.0_1: 21 files, 3.5MB, built in 1 minute 2 seconds
-==> Installing xdotool
-==> Downloading https://github.com/jordansissel/xdotool/archive/v3.20160805.1.tar.gz
-==> Downloading from https://codeload.github.com/jordansissel/xdotool/tar.gz/v3.20160805.1
-==> make PREFIX=/home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1 INSTALLMAN=/home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1/share/man install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall xdotool`
+==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4
+==> Downloading https://files.pythonhosted.org/packages/e0/02/2b14188e06ddf61e5b462e216b15d893e8472fca28b1b0c5d9272ad7e87c/setuptools-38.5.2.zip
+==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
+==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
+==> /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin/python -s setup.py --no-user-cfg install --force --verbose --single-version-externally-managed --record=installed.txt --install-scripts=/home/monday/.linuxbrew/Cellar/python@2/2.7.14_4/bin --install-lib=/home/monday/.linuxbrew/lib/python2.7/site-packages
 ==> Caveats
-You will probably want to enable XTEST in your X11 server now by running:
-  defaults write org.x.X11 enable_test_extensions -boolean true
+Pip and setuptools have been installed. To update them
+  pip install --upgrade pip setuptools
 
-For the source of this useful hint:
-  https://stackoverflow.com/questions/1264210/does-mac-x11-have-the-xtest-extension
+You can install Python packages with
+  pip install <package>
+
+They will install into the site-package directory
+  /home/monday/.linuxbrew/lib/python2.7/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
 ==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/xdotool/3.20160805.1_1: 10 files, 596.5KB, built in 47 seconds
-==> Determining xdotool bottle rebuild...
-==> Bottling xdotool-3.20160805.1_1.x86_64_linux.bottle.1.tar.gz...
-./xdotool-3.20160805.1_1.x86_64_linux.bottle.1.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/python@2/2.7.14_4: 5,498 files, 107.5MB, built in 10 minutes 30 seconds
+==> Installing python dependency: sphinx-doc
+==> Downloading https://linuxbrew.bintray.com/bottles/sphinx-doc-1.7.1.x86_64_linux.bottle.tar.gz
+==> Pouring sphinx-doc-1.7.1.x86_64_linux.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /home/monday/.linuxbrew,
+because this formula is mainly used internally by other formulae.
+Users are advised to use `pip` to install sphinx-doc.
+
+If you need to have this software first in your PATH run:
+  echo 'export PATH="/home/monday/.linuxbrew/opt/sphinx-doc/bin:$PATH"' >> ~/.bash_profile
+
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/sphinx-doc/1.7.1: 2,626 files, 37.5MB
+==> Installing python
+==> Downloading https://www.python.org/ftp/python/3.6.4/Python-3.6.4.tar.xz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/python/3.6.4_5 --enable-ipv6 --datarootdir=/home/monday/.linuxbrew/Cellar/python/3.6.4_5/share --datadir=/home/monday/.linuxbrew/Cellar/python/3.6.4_5/share --enable-shared --enable-loadable-sqlite-extensions --without-ensurepip --with-system-ffi MACOSX_DEPLOYMENT_TARGET=0 LDFLAGS=  -L/home/monday/.linuxbrew/lib CPPFLAGS=  -I/home/monday/.linuxbrew/include
+==> make
+==> make install PYTHONAPPSDIR=/home/monday/.linuxbrew/Cellar/python/3.6.4_5
+==> Downloading https://files.pythonhosted.org/packages/e0/02/2b14188e06ddf61e5b462e216b15d893e8472fca28b1b0c5d9272ad7e87c/setuptools-38.5.2.zip
+==> Downloading https://files.pythonhosted.org/packages/11/b6/abcb525026a4be042b486df43905d6893fb04f05aac21c32c638e939e447/pip-9.0.1.tar.gz
+==> Downloading https://files.pythonhosted.org/packages/fa/b4/f9886517624a4dcb81a1d766f68034344b7565db69f13d52697222daeb72/wheel-0.30.0.tar.gz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall python`
+==> Caveats
+Python has been installed as
+  /home/monday/.linuxbrew/bin/python3
+
+Unversioned symlinks `python`, `python-config`, `pip` etc. pointing to
+`python3`, `python3-config`, `pip3` etc., respectively, have been installed into
+  /home/monday/.linuxbrew/opt/python/libexec/bin
+
+If you need Homebrew's Python 2.7 run
+  brew install python@2
+
+Pip, setuptools, and wheel have been installed. To update them run
+  pip3 install --upgrade pip setuptools wheel
+
+You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /home/monday/.linuxbrew/lib/python3.6/site-packages
+
+See: https://docs.brew.sh/Homebrew-and-Python
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/python/3.6.4_5: 7,231 files, 144.8MB, built in 10 minutes 13 seconds
+==> Determining python bottle rebuild...
+==> Bottling python-3.6.4_5.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if python-3.6.4_5.x86_64_linux.bottle.1.tar.gz is relocatable...
+./python-3.6.4_5.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "6d7676c7de3e156a73c16e97cd37bcbd3fb880ea6bdfa364c3088dfaf48d5950" => :x86_64_linux
+    sha256 "a4f9719028a4007ff9a443128f34bc54fe62152b7249e095bb4d5e3b982a241b" => :x86_64_linux
   end
