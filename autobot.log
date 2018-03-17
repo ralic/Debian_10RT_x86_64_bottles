@@ -1,10 +1,86 @@
-==> Determining libxml2 bottle rebuild...
-==> Bottling libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./libxml2-2.9.7_1.x86_64_linux.bottle.1.tar.gz
+==> Auto-updated Homebrew!
+Updated Homebrew from 42f6c7af3 to 0f5ae0339.
+Updated 2 taps (homebrew/core, linuxbrew/xorg).
+==> New Formulae
+gtksourceview@4
+isl@18
+==> Updated Formulae
+acpica
+adwaita-icon-theme
+ansible-lint
+apibuilder-cli
+armor
+atlassian-cli
+autoconf-archive
+cdk
+chakra
+cmake
+curl
+dehydrated
+erlang
+frobtads
+gcc
+gcc@6
+git-ftp
+glib
+gnumeric
+gobject-introspection
+goffice
+gtksourceview3
+isl
+jmxtrans
+llvm
+macvim
+mill
+mingw-w64
+octave
+osquery
+paket
+pango
+pipenv
+platformio
+rhash
+rocksdb
+rust
+termius
+
+==> Installing dependencies for ffmpeg: nasm, texi2html, lame, x264, xvid
+==> Installing ffmpeg dependency: nasm
+==> Downloading https://linuxbrew.bintray.com/bottles/nasm-2.13.03.x86_64_linux.bottle.tar.gz
+==> Pouring nasm-2.13.03.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/nasm/2.13.03: 30 files, 4.7MB
+==> Installing ffmpeg dependency: texi2html
+==> Downloading https://download.savannah.gnu.org/releases/texi2html/texi2html-5.0.tar.gz
+==> Downloading from https://mirrors.up.pt/pub/nongnu/texi2html/texi2html-5.0.tar.gz
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/texi2html/5.0 --mandir=/home/monday/.linuxbrew/Cellar/texi2html/5.0/share/man --infodir=/home/monday/.linuxbrew/Cellar/texi2html/5.0/share/info
+==> make install
+🍺  /home/monday/.linuxbrew/Cellar/texi2html/5.0: 279 files, 6.5MB, built in 1 minute 45 seconds
+==> Installing ffmpeg dependency: lame
+==> Downloading https://linuxbrew.bintray.com/bottles/lame-3.100.x86_64_linux.bottle.tar.gz
+==> Pouring lame-3.100.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/lame/3.100: 28 files, 2.8MB
+==> Installing ffmpeg dependency: x264
+==> Downloading https://linuxbrew.bintray.com/bottles/x264-r2854.x86_64_linux.bottle.tar.gz
+==> Pouring x264-r2854.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/x264/r2854: 11 files, 4.2MB
+==> Installing ffmpeg dependency: xvid
+==> Downloading https://linuxbrew.bintray.com/bottles/xvid-1.3.5.x86_64_linux.bottle.tar.gz
+==> Pouring xvid-1.3.5.x86_64_linux.bottle.tar.gz
+🍺  /home/monday/.linuxbrew/Cellar/xvid/1.3.5: 12 files, 1.4MB
+==> Installing ffmpeg
+==> Downloading https://ffmpeg.org/releases/ffmpeg-3.4.2.tar.bz2
+==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/ffmpeg/3.4.2 --enable-shared --enable-pthreads --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=gcc-7 --host-cflags= --host-ldflags= --disable-jack --enable-gpl --enable-libmp3lame --enable-libx264 --enable-libxvid --disable-lzma
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall ffmpeg`
+🍺  /home/monday/.linuxbrew/Cellar/ffmpeg/3.4.2: 247 files, 269.8MB, built in 12 minutes 56 seconds
+==> Determining ffmpeg bottle rebuild...
+==> Bottling ffmpeg-3.4.2.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if ffmpeg-3.4.2.x86_64_linux.bottle.1.tar.gz is relocatable...
+./ffmpeg-3.4.2.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "f65bc7d3d876cd5429447b0a9e2186179a3335541acc059da07e9b13856ec7ee" => :x86_64_linux
+    sha256 "7ff070dcd442bcdfe89d1490bf1dbdfd2ae1fcd9a1e73add6160b7468d312edc" => :x86_64_linux
   end
