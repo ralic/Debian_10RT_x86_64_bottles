@@ -1,15 +1,16 @@
-==> Downloading https://cairographics.org/releases/pixman-0.34.0.tar.gz
-==> ./configure --disable-gtk --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/pixman/0.34.0_1
+==> Downloading https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/23794388-327c-11e7-8219-c41432b94acf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180330T171043Z&X-Amz-Expires=300&X-Amz-Signature=dd3b148cc44db2aee7c0129dfbd9757a3a65903be122c5491afc1fb1fd7fb1fd&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.4.tar.gz&response-content-type=application%2Foctet-stream
+==> ./configure --disable-silent-rules --enable-shared --prefix=/home/monday/.linuxbrew/Cellar/flex/2.6.4
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pixman`
-🍺  /home/monday/.linuxbrew/Cellar/pixman/0.34.0_1: 14 files, 8.0MB, built in 1 minute 31 seconds
-==> Determining pixman bottle rebuild...
-==> Bottling pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall flex`
+🍺  /home/monday/.linuxbrew/Cellar/flex/2.6.4: 47 files, 1.9MB, built in 51 seconds
+==> Determining flex bottle rebuild...
+==> Bottling flex-2.6.4.x86_64_linux.bottle.1.tar.gz...
+./flex-2.6.4.x86_64_linux.bottle.1.tar.gz
   bottle do
-    cellar :any_skip_relocation
+    prefix "/home/monday/.linuxbrew"
+    cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "09a7cdf9ead2a066ada0bc2ef6774289b375af1896054831cf64f9e10d0d465e" => :x86_64_linux
+    sha256 "7c8ec734c15ebbfbe2591067e349173d7204fa92dd17643b680006ae01f6bbc7" => :x86_64_linux
   end
