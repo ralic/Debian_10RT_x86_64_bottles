@@ -1,21 +1,15 @@
-==> Upgrading 1 outdated package, with result:
-pcre 8.42
-==> Upgrading pcre 
-==> Downloading https://ftp.pcre.org/pub/pcre/pcre-8.42.tar.bz2
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/pcre/8.42 --enable-utf8 --enable-pcre8 --enable-pcre16 --enable-pcre32 --enable-unicode-properties --enable-pcregrep-libz --enable-pcregrep-libbz2 --enable-jit
-==> make
-==> make test
+==> Downloading https://cairographics.org/releases/pixman-0.34.0.tar.gz
+==> ./configure --disable-gtk --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/pixman/0.34.0_1
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall pcre`
-🍺  /home/monday/.linuxbrew/Cellar/pcre/8.42: 209 files, 13.6MB, built in 2 minutes 10 seconds
-==> Determining pcre bottle rebuild...
-==> Bottling pcre-8.42.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if pcre-8.42.x86_64_linux.bottle.1.tar.gz is relocatable...
-./pcre-8.42.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall pixman`
+🍺  /home/monday/.linuxbrew/Cellar/pixman/0.34.0_1: 14 files, 8.0MB, built in 1 minute 31 seconds
+==> Determining pixman bottle rebuild...
+==> Bottling pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz...
+==> Detecting if pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz is relocatable...
+./pixman-0.34.0_1.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "2eccc9ce510c5a640e810bdfec5a9b2d99ea134b864d829af39a5b596dbc6cee" => :x86_64_linux
+    sha256 "09a7cdf9ead2a066ada0bc2ef6774289b375af1896054831cf64f9e10d0d465e" => :x86_64_linux
   end
