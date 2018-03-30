@@ -1,16 +1,20 @@
-==> Downloading https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
-==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/14521001/23794388-327c-11e7-8219-c41432b94acf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180330T171043Z&X-Amz-Expires=300&X-Amz-Signature=dd3b148cc44db2aee7c0129dfbd9757a3a65903be122c5491afc1fb1fd7fb1fd&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dflex-2.6.4.tar.gz&response-content-type=application%2Foctet-stream
-==> ./configure --disable-silent-rules --enable-shared --prefix=/home/monday/.linuxbrew/Cellar/flex/2.6.4
+==> Downloading https://github.com/fribidi/fribidi/releases/download/v1.0.2/fribidi-1.0.2.tar.bz2
+==> Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/5575048/b6b67c06-2af1-11e8-8ba6-d0b2f2148c78?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20180330%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20180330T171224Z&X-Amz-Expires=300&X-Amz-Signature=c72b98a9740a32fbd755c8baa22317056bcc80338672bf82c037450602b3086a&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dfribidi-1.0.2.tar.bz2&response-content-type=application%2Foctet-stream
+==> Downloading https://raw.githubusercontent.com/Homebrew/formula-patches/f9c1d7d/fribidi/fix-docs.diff
+==> Patching
+==> Applying fix-docs.diff
+patching file configure
+patching file doc/Makefile.in
+==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/fribidi/1.0.2 --enable-static
 ==> make install
 ==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall flex`
-🍺  /home/monday/.linuxbrew/Cellar/flex/2.6.4: 47 files, 1.9MB, built in 51 seconds
-==> Determining flex bottle rebuild...
-==> Bottling flex-2.6.4.x86_64_linux.bottle.1.tar.gz...
-./flex-2.6.4.x86_64_linux.bottle.1.tar.gz
+You can run it manually using `brew postinstall fribidi`
+🍺  /home/monday/.linuxbrew/Cellar/fribidi/1.0.2: 67 files, 853.1KB, built in 32 seconds
+==> Determining fribidi bottle rebuild...
+==> Bottling fribidi-1.0.2.x86_64_linux.bottle.1.tar.gz...
+./fribidi-1.0.2.x86_64_linux.bottle.1.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
+    cellar :any_skip_relocation
     rebuild 1
-    sha256 "7c8ec734c15ebbfbe2591067e349173d7204fa92dd17643b680006ae01f6bbc7" => :x86_64_linux
+    sha256 "41696b46ab70bf87e0fd9d15c362904b576477d08d11057bfa30cd9b4b5315e5" => :x86_64_linux
   end
