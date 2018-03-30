@@ -1,16 +1,8 @@
-==> Downloading https://download.savannah.gnu.org/releases/texi2html/texi2html-5.0.tar.gz
-Already downloaded: /home/monday/.cache/Homebrew/texi2html-5.0.tar.gz
-==> ./configure --prefix=/home/monday/.linuxbrew/Cellar/texi2html/5.0 --mandir=/home/monday/.linuxbrew/Cellar/texi2html/5.0/share/man --infodir=/home/monday/.linuxbrew/Cellar/texi2html/5.0/share/info
-==> make install
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall texi2html`
-🍺  /home/monday/.linuxbrew/Cellar/texi2html/5.0: 279 files, 6.5MB, built in 19 seconds
-==> Determining texi2html bottle rebuild...
-==> Bottling texi2html-5.0.x86_64_linux.bottle.2.tar.gz...
-==> Detecting if texi2html-5.0.x86_64_linux.bottle.2.tar.gz is relocatable...
-./texi2html-5.0.x86_64_linux.bottle.2.tar.gz
+==> Determining automake bottle rebuild...
+==> Bottling automake-1.16.1.x86_64_linux.bottle.1.tar.gz...
+./automake-1.16.1.x86_64_linux.bottle.1.tar.gz
   bottle do
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "2671af910c7e99abf025cb43b53d62d4863729a25ad31bec27c04daed6833a27" => :x86_64_linux
+    rebuild 1
+    sha256 "aab3cf0dd0a31c8b7d7e3e98001855827321b035fd4c21f7b6ba0d015c630f8b" => :x86_64_linux
   end
