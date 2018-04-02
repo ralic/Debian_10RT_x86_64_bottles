@@ -1,29 +1,23 @@
-==> Downloading https://www.openssl.org/source/openssl-1.0.2o.tar.gz
-Already downloaded: /home/monday/.cache/Homebrew/openssl-1.0.2o.tar.gz
-==> perl ./Configure --prefix=/home/monday/.linuxbrew/Cellar/openssl/1.0.2o_1 --openssldir=/home/monday/.linuxbrew/etc/openssl no-comp no-ssl2 no-ssl3 no-zlib shared enable-cms -Wa,--noexecstack linux-x86_64
-==> make depend
-==> make
-==> make test
-==> make install MANDIR=/home/monday/.linuxbrew/Cellar/openssl/1.0.2o_1/share/man MANSUFFIX=ssl
-==> Not running post_install as we're building a bottle
-You can run it manually using `brew postinstall openssl`
-==> Caveats
-A CA file has been bootstrapped using certificates from the SystemRoots
-keychain. To add additional certificates (e.g. the certificates added in
-the System keychain), place .pem files in
-  /home/monday/.linuxbrew/etc/openssl/certs
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
 
-and run
-  /home/monday/.linuxbrew/opt/openssl/bin/c_rehash
-==> Summary
-🍺  /home/monday/.linuxbrew/Cellar/openssl/1.0.2o_1: 1,790 files, 14.6MB, built in 5 minutes 28 seconds
-==> Determining openssl bottle rebuild...
-==> Bottling openssl-1.0.2o_1.x86_64_linux.bottle.1.tar.gz...
-==> Detecting if openssl-1.0.2o_1.x86_64_linux.bottle.1.tar.gz is relocatable...
-./openssl-1.0.2o_1.x86_64_linux.bottle.1.tar.gz
+==> Downloading https://curl.haxx.se/download/curl-7.59.0.tar.bz2
+==> ./configure --disable-silent-rules --prefix=/home/monday/.linuxbrew/Cellar/curl/7.59.0 --with-ssl=/home/monday/.linuxbrew/opt/openssl --with-ca-bundle=/home/monday/.linuxbrew/etc/openssl/cert.pem --with-ca-path=/home/monday/.linuxbrew/etc/openssl/certs --without-libssh2 --without-libmetalink --without-gssapi --without-librtmp --disable-ares --disable-ldap
+==> make install
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall curl`
+🍺  /home/monday/.linuxbrew/Cellar/curl/7.59.0: 422 files, 3.3MB, built in 3 minutes 18 seconds
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+No changes to formulae.
+
+==> Determining curl bottle rebuild...
+==> Bottling curl-7.59.0.x86_64_linux.bottle.1.tar.gz...
+./curl-7.59.0.x86_64_linux.bottle.1.tar.gz
   bottle do
     prefix "/home/monday/.linuxbrew"
     cellar "/home/monday/.linuxbrew/Cellar"
     rebuild 1
-    sha256 "440b5eafab2d10f92ace32e0ceab2f9bbe1c3a5730704c71aa39bf42bb80cddf" => :x86_64_linux
+    sha256 "36740ed3c6e3e135a888f5e6df8d00c78d9d3e066024aa0891a55b743d97c455" => :x86_64_linux
   end
