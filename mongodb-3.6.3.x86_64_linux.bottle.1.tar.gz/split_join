@@ -1,0 +1,52 @@
+#!/bin/bash
+
+### Total_FileName/ True_FileName
+TFNAME=mongodb-3.6.3.x86_64_linux.bottle.1.tar.gz 
+### Splited_FileName
+SFNAME=mongodb.
+
+### Split files into parts
+
+function spliter() {
+	split -b 49M $TFNAME --verbose -d $SFNAME
+}
+
+### Join files after split and execute for installationo
+function joiner() {
+cat $SFNAME* > restored_$TFNAME
+	chmod 700 restored_$TFNAME
+	./restored_$TFNAME
+}
+
+function QNA() {
+   echo "[Info] Use 'spliter' to split a file to 49MB, 'joiner' to join them as executable"
+	echo "[Info] Set TFNAME as TotalFileName, Set SFNAME as Splited_FileName"
+	echo "[Question] What is your plan now? (split/join)"
+	read option 
+   case $option in
+            split)
+            	  spliter
+            ;;
+            join)
+            	  joiner
+            ;;
+            *)
+            echo [Info] Try to type 'QNA' again to come up the question again.
+            ;;
+    esac
+}
+
+function cleanup() {
+	unset spliter
+	unset joiner
+	unset QNA
+	unset cleanup
+}
+
+declare | grep TFNAME | head -n 1
+declare | grep SFNAME | head -n 1
+type -all spliter
+type -all joiner
+
+
+QNA
