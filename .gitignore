@@ -29,6 +29,6 @@ humann2-*.x86_64_linux.bottle.1.tar.gz
 joshua-*.tar.gz
 mingw-w64-*.x86_64_linux.bottle.1.tar.gz
 mitie-*.x86_64_linux.bottle.1.tar.gz
-mongodb-*.x86_64_linux.bottle.1.tar.gz
+#mongodb-*.x86_64_linux.bottle.1.tar.gz
 mysql*.tar.gz
 amos*.tar.gz
