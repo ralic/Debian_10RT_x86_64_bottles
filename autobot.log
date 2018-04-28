@@ -1,9 +1,18 @@
-==> Determining intltool bottle rebuild...
-==> Bottling intltool-0.51.0_1.x86_64_linux.bottle.1.tar.gz...
-./intltool-0.51.0_1.x86_64_linux.bottle.1.tar.gz
+==> Downloading http://download.oracle.com/otn-pub/java/jdk/10.0.1+10/fb4372174a714e6b8c52526dc134031e/jdk-10.0.1_linux-x64_bin.tar.gz
+Already downloaded: /home/monday/.cache/Homebrew/jdk-10.0.1.tar.gz
+==> Not running post_install as we're building a bottle
+You can run it manually using `brew postinstall jdk`
+==> Caveats
+By installing and using JDK you agree to the
+Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX
+http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+==> Summary
+🍺  /home/monday/.linuxbrew/Cellar/jdk/10.0.1: 1,209 files, 554.3MB, built in 23 seconds
+==> Determining jdk bottle rebuild...
+==> Bottling jdk-10.0.1.x86_64_linux.bottle.tar.gz...
+==> Detecting if jdk-10.0.1.x86_64_linux.bottle.tar.gz is relocatable...
+./jdk-10.0.1.x86_64_linux.bottle.tar.gz
   bottle do
-    prefix "/home/monday/.linuxbrew"
-    cellar "/home/monday/.linuxbrew/Cellar"
-    rebuild 1
-    sha256 "b8f569f579e3256b2512668118fc5b28632be30b1085697b11b5de2a76f52b2f" => :x86_64_linux
+    cellar :any_skip_relocation
+    sha256 "df78a3bc7e37017ad80d0f1fb67ecf8e28d84c0a5b9ef1f158ec77ad126f0e42" => :x86_64_linux
   end
